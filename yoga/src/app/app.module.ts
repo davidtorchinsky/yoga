@@ -6,10 +6,14 @@ import { FlexLayoutModule} from '@angular/flex-layout'
 
 import { AppComponent } from './app.component';
 import { from } from 'rxjs';
+import { HeaderComponent } from './header/header.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
