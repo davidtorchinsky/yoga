@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "yoga"
+  "defaultProject": "yoga",
+  "cli": {
+    "analytics": "ed7075d5-5a6c-4ec6-b815-3ee0a31a938a"
+  }
 }

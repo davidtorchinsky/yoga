@@ -4005,8 +4005,10 @@ textarea,
     top: 0;
     left: 0;
     z-index: 0;
-    cursor: url(../../../../../../../../themes/yogaandjuliet/assets/img/close_white.png) 10 10, no-drop;
-    cursor: -webkit-image-set(url(../../../../../../../../themes/yogaandjuliet/assets/img/close_white.png) 1x, url(../../../../../../../../themes/yogaandjuliet/assets/img/close_white@2x.png) 2x) 10 10, auto
+    /*     cursor: url(../../../../../../../../themes/yogaandjuliet/assets/img/close_white.png) 10 10, no-drop;
+ */
+    /*     cursor: -webkit-image-set(url(../../../../../../../../themes/yogaandjuliet/assets/img/close_white.png) 1x, url(../../../../../../../../themes/yogaandjuliet/assets/img/close_white@2x.png) 2x) 10 10, auto
+ */
 }
 
 .small-1\/5 {
@@ -4247,7 +4249,8 @@ h6 {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #f9f9f9 url(../../../../../../../../themes/yogaandjuliet/assets/img/preloader.gif) center center no-repeat;
+    background: #f9f9f9/* url(../../../../../../../../themes/yogaandjuliet/assets/img/preloader.gif)  */
+    center center no-repeat;
     -moz-background-size: 55px 55px;
     -o-background-size: 55px 55px;
     -webkit-background-size: 55px 55px;
@@ -4266,8 +4269,9 @@ h6 {
 
 @font-face {
     font-family: 'FontAwesome';
-    src: url(../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.eot?v=4.7.0);
-    src: url("../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url(../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url("../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+    /* src: url(../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.eot?v=4.7.0); */
+    /*     src: url("../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url(../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url("../../../../../../../../themes/yogaandjuliet/assets/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+ */
     font-weight: 400;
     font-style: normal
 }
@@ -4400,40 +4404,46 @@ h6 {
     }
 }
 
-.fa-rotate-90 {
+
+/* .fa-rotate-90 {
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg)
-}
+} */
 
-.fa-rotate-180 {
+
+/* .fa-rotate-180 {
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg)
-}
+} */
 
-.fa-rotate-270 {
+
+/* .fa-rotate-270 {
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
     -webkit-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg)
-}
+} */
 
+
+/* 
 .fa-flip-horizontal {
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
     -webkit-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     transform: scale(-1, 1)
-}
+} */
 
-.fa-flip-vertical {
+
+/* .fa-flip-vertical {
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
     -webkit-transform: scale(1, -1);
     -ms-transform: scale(1, -1);
     transform: scale(1, -1)
-}
+} */
 
 :root .fa-rotate-90,
 :root .fa-rotate-180,
@@ -10061,7 +10071,7 @@ cite:before {
     touch-action: none;
     z-index: 1500;
     -webkit-text-size-adjust: 100%;
-    -webkit-backface-visibility: hidden;
+    /*  -webkit-backface-visibility: hidden; */
     outline: none
 }
 
@@ -10111,7 +10121,7 @@ cite:before {
     height: 100%;
     background: rgba(0, 0, 0, .95);
     opacity: 0;
-    -webkit-backface-visibility: hidden;
+    /*  -webkit-backface-visibility: hidden; */
     will-change: opacity
 }
 
@@ -10167,10 +10177,12 @@ cite:before {
     transition: none
 }
 
-.pswp__container,
+
+/* .pswp__container,
 .pswp__zoom-wrap {
     -webkit-backface-visibility: hidden
 }
+ */
 
 .pswp__item {
     position: absolute;
@@ -10189,9 +10201,11 @@ cite:before {
     left: 0
 }
 
+
+/* 
 .pswp__img--placeholder {
     -webkit-backface-visibility: hidden
-}
+} */
 
 .pswp__img--placeholder--blank {
     background: #222
@@ -10266,7 +10280,7 @@ cite:before {
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-    background: url(../../../../../../../../themes/yogaandjuliet/assets/img/default-skin/default-skin.png) 0 0 no-repeat;
+    /*   background: url(../../../../../../../../themes/yogaandjuliet/assets/img/default-skin/default-skin.png) 0 0 no-repeat; */
     background-size: 264px 88px;
     width: 44px;
     height: 44px
@@ -10279,7 +10293,7 @@ cite:before {
     .pswp--svg .pswp__button,
     .pswp--svg .pswp__button--arrow--left:before,
     .pswp--svg .pswp__button--arrow--right:before {
-        background-image: url(../../../../../../../../themes/yogaandjuliet/assets/img/default-skin/default-skin.svg)
+        /*  background-image: url(../../../../../../../../themes/yogaandjuliet/assets/img/default-skin/default-skin.svg) */
     }
     .pswp--svg .pswp__button--arrow--left,
     .pswp--svg .pswp__button--arrow--right {
@@ -10553,9 +10567,10 @@ a.pswp__share--download:hover {
     opacity: 1
 }
 
-.pswp__preloader--active .pswp__preloader__icn {
+
+/* .pswp__preloader--active .pswp__preloader__icn {
     background: url(../../../../../../../../themes/yogaandjuliet/assets/css/preloader.gif) 0 0 no-repeat
-}
+} */
 
 .pswp--css_animation .pswp__preloader--active {
     opacity: 1
@@ -10757,7 +10772,7 @@ a.pswp__share--download:hover {
     z-index: 1043;
     position: fixed;
     outline: none!important;
-    -webkit-backface-visibility: hidden
+    /*  -webkit-backface-visibility: hidden */
 }
 
 .mfp-container {
@@ -11596,7 +11611,7 @@ input[type=submit].style8 {
 .button.style8:hover,
 input[type=submit].style8:hover {
     background: #151515;
-    color: #white
+    color: white;
 }
 
 .btn.white,
@@ -16350,10 +16365,11 @@ img.full {
     border: 0
 }
 
-.shop_table.cart {
+
+/* .shop_table.cart {
     tr: last-child;
     tr-border: 0
-}
+} */
 
 .coupon label {
     display: none
@@ -16968,7 +16984,7 @@ form.woocommerce-checkout {
     -moz-text-fill-color: transparent!important;
     -o-text-fill-color: transparent!important;
     -webkit-text-fill-color: transparent!important;
-    text-fill-color: transparent!important
+    /*  text-fill-color: transparent!important */
 }
 
 .thb-slidetype {
@@ -16991,17 +17007,17 @@ form.woocommerce-checkout {
     -moz-text-fill-color: transparent;
     -o-text-fill-color: transparent;
     -ms-text-fill-color: transparent;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; */
     -webkit-text-stroke-width: 1px;
     -moz-text-stroke-width: 1px;
     -o-text-stroke-width: 1px;
     -ms-text-stroke-width: 1px;
-    text-stroke-width: 1px;
+    /*  text-stroke-width: 1px; */
     -webkit-text-stroke-color: #151515;
     -moz-text-stroke-color: #151515;
     -o-text-stroke-color: #151515;
     -ms-text-stroke-color: #151515;
-    text-stroke-color: #151515
+    /*  text-stroke-color: #151515 */
 }
 
 .inline-icon {
@@ -19532,17 +19548,19 @@ blockquote.pullright {
     display: block
 }
 
-.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner,
+
+/* .odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner,
 .odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon-inner {
     display: block;
     -webkit-backface-visibility: hidden
-}
+} */
 
-.odometer.odometer-auto-theme .odometer-digit .odometer-value,
+
+/* .odometer.odometer-auto-theme .odometer-digit .odometer-value,
 .odometer.odometer-theme-minimal .odometer-digit .odometer-value {
     display: block;
     -webkit-transform: translateZ(0)
-}
+} */
 
 .odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value,
 .odometer.odometer-theme-minimal .odometer-digit .odometer-value.odometer-last-value {
