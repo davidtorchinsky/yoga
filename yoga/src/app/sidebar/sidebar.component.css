@@ -52,9 +52,10 @@ a:hover {
 
 #menuToggle {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: 50px;
+    left: 100px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -136,17 +137,79 @@ a:hover {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
+.mostrar {
+    display: block;
+}
+
 
 /*
  * Make this absolute positioned
  * at the top left of the screen
  */
 
+.abierto {
+    display: block;
+    visibility: inherit;
+    position: fixed;
+    opacity: 1;
+    background: rgba(65, 65, 65, .9);
+    z-index: 105;
+}
+
+.run-animation-0 {
+    position: relative;
+    animation: bounceInLeft 0.5s ease;
+}
+
+.run-animation-1 {
+    position: relative;
+    animation: bounceInLeft 1s ease;
+}
+
+.run-animation-2 {
+    position: relative;
+    animation: bounceInLeft 1.5s ease;
+}
+
+.run-animation-3 {
+    position: relative;
+    animation: bounceInLeft 2s ease;
+}
+
+.run-animation-4 {
+    position: relative;
+    animation: bounceInLeft 2.5s ease;
+}
+
+.spacer {
+    position: fixed;
+    margin-left: 20%;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 1;
+    background: rgba(65, 65, 65, .9);
+    cursor: crosshair;
+}
+
+.delay-0-5s {
+    animation-delay: 0.5s;
+}
+
+.delay-1-5s {
+    animation-delay: 1.5s;
+}
+
+.delay-2-5s {
+    animation-delay: 2.5s;
+}
+
 #menu {
-    position: absolute;
-    width: 300px;
-    height: 100vh;
-    margin: -100px 0 0 0;
+    left: -26%;
+    width: 350px;
+    height: 200vh;
     padding: 50px;
     padding-top: 125px;
     right: -100px;

@@ -1,11 +1,10 @@
-<nav role='navigation' class="ubic">
+<nav role='navigation' class="ubicm pull-left">
     <div id="menuToggle">
         <!--
       A fake / hidden checkbox is used as click reciever,
       so you can use the :checked selector on it.
       -->
-        <input type="checkbox" style="
-        margin-right: 80vw;" />
+        <input type="checkbox" (click)="click()" ng-model="check.value" [checked]="check" />
 
         <!--
       Some spans to act as a hamburger.
@@ -21,56 +20,25 @@
       Too bad the menu has to be inside of the button
       but hey, it's pure CSS magic.
       -->
-        <ul id="menu" style="
-        margin-right: 100vw;">
-            <a href="#">
-                <li>Home</li>
-            </a>
-            <a href="#">
-                <li>About</li>
-            </a>
-            <a href="#">
-                <li>Info</li>
-            </a>
-            <a href="#">
-                <li>Contact</li>
-            </a>
-            <a href="https://erikterwan.com/" target="_blank">
-                <li>Show me more</li>
-            </a>
-        </ul>
+
+        <div class="spacer" [@gatillo]="sidebar ? 'abierto' : 'cerrado'" (click)="click()">
+            <ul id="menu" class='abierto' [@gatillo]="sidebar ? 'abierto' : 'cerrado'" (click)="$event.stopPropagation()">
+                <a href="#">
+                    <li [ngClass]="{'run-animation-0': sidebar}">Home</li>
+                </a>
+                <a href="#">
+                    <li [ngClass]="{'run-animation-1': sidebar}">About</li>
+                </a>
+                <a href="#">
+                    <li [ngClass]="{'run-animation-2': sidebar}">Info</li>
+                </a>
+                <a href="#">
+                    <li [ngClass]="{'run-animation-3': sidebar}">Contact</li>
+                </a>
+                <a href="https://erikterwan.com/" target="_blank">
+                    <li [ngClass]="{'run-animation-4': sidebar}">Show me more</li>
+                </a>
+            </ul>
+        </div>
     </div>
 </nav>
-
-
-
-<!--Navbar-->
-<nav class="navbar navbar-light purple lighten-4 mb-4">
-
-
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler toggler-example purple darken-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false" aria-label="Toggle navigation"><span class="white-text"><i class="fas fa-bars fa-1x"></i></span></button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent41">
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-        </ul>
-        <!-- Links -->
-
-    </div>
-    <!-- Collapsible content -->
-
-</nav>
-<!--/.Navbar-->
