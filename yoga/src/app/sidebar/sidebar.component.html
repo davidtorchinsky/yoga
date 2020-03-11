@@ -27,7 +27,7 @@
                 <a href="#">
                     <!--  <li [ngClass]="{'run-animation-0': sidebar}">ACTIVIDADES</li> -->
 
-                    <div class="panel-group" [ngClass]="{'run-animation-0': sidebar}">
+                    <div class="panel-group" [ngClass]="{'run-animation-0': sidebar}" (click)="$event.stopPropagation()">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
