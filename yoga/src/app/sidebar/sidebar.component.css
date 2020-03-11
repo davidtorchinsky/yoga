@@ -117,6 +117,18 @@ a:hover {
     background: #232323;
 }
 
+.delay-0-5s {
+    animation-delay: 0.5s;
+}
+
+.delay-1-5s {
+    animation-delay: 1.5s;
+}
+
+.delay-2-5s {
+    animation-delay: 2.5s;
+}
+
 
 /*
  * But let's hide the middle one.
@@ -179,6 +191,11 @@ a:hover {
 .run-animation-4 {
     position: relative;
     animation: bounceInLeft 2.5s ease;
+}
+
+.run-animation-5 {
+    position: relative;
+    animation: bounceInLeft 3s ease;
 }
 
 .spacer {
