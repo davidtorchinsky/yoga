@@ -209,7 +209,11 @@ a:hover {
 
 .run-animation-5 {
     position: relative;
-    animation: bounceInLeft 3s ease;
+    animation: fadeInLeft 1.65s ease;
+}
+
+.panel-group {
+    padding: 10px;
 }
 
 .spacer {
@@ -282,7 +286,7 @@ a:hover {
         /* overflow-x: hidden; */
         /* needed because hiding the menu on the right side is not perfect,  */
     }
-    a {
+    a h4 {
         text-decoration: none;
         color: #232323;
         transition: color 0.3s ease;

@@ -66,8 +66,11 @@ export class SidebarComponent implements OnInit {
 
   click(){
     this.sidebar=!this.sidebar;
-    this.check=!this.check;
-    console.log("sidebar "+this.sidebar+" check "+this.check)
+    this.check=!this.check; 
+  }
+
+  vacio(){
+
   }
 
 }
