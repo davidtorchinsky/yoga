@@ -29,6 +29,18 @@
     margin-right: 80vw;
 }
 
+#header {
+    width: 100%;
+    height: 90px;
+    display: block;
+    visibility: inherit;
+    position: fixed;
+    opacity: 1;
+    background: white;
+    z-index: 0;
+    cursor: default;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -41,13 +53,14 @@ body {
 }
 
 a {
+    font-family: 'Avenir-Medium';
     text-decoration: none;
     color: #232323;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: tomato;
+    color: #E99623;
 }
 
 #menuToggle {
@@ -55,7 +68,7 @@ a:hover {
     position: fixed;
     top: 50px;
     right: 50px;
-    left: 100px;
+    left: 50px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -154,31 +167,32 @@ a:hover {
     opacity: 1;
     background: rgba(65, 65, 65, .9);
     z-index: 105;
+    cursor: default;
 }
 
 .run-animation-0 {
     position: relative;
-    animation: bounceInLeft 0.5s ease;
+    animation: fadeInLeft 0.25s ease;
 }
 
 .run-animation-1 {
     position: relative;
-    animation: bounceInLeft 1s ease;
+    animation: fadeInLeft .5s ease;
 }
 
 .run-animation-2 {
     position: relative;
-    animation: bounceInLeft 1.5s ease;
+    animation: fadeInLeft 0.75s ease;
 }
 
 .run-animation-3 {
     position: relative;
-    animation: bounceInLeft 2s ease;
+    animation: fadeInLeft 1.15s ease;
 }
 
 .run-animation-4 {
     position: relative;
-    animation: bounceInLeft 2.5s ease;
+    animation: fadeInLeft 1.5s ease;
 }
 
 .spacer {
@@ -210,7 +224,7 @@ a:hover {
     left: -26%;
     width: 350px;
     height: 200vh;
-    padding: 50px;
+    padding: 65px;
     padding-top: 125px;
     right: -100px;
     background: white;

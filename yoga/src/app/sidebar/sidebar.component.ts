@@ -28,6 +28,27 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
         animate('0.75s')
       ]),
     ]),
+    trigger('header', [
+      // ...
+      state('sinOpacidad', style({
+
+       
+        opacity: 0.5,
+
+      })),
+      state('conOpacidad', style({
+
+       
+        opacity: 1,
+     
+      })),
+      transition('sinOpacidad => conOpacidad', [
+        animate('0.75s')
+      ]),
+      transition('conOpacidad => sinOpacidad', [
+        animate('0.75s')
+      ]),
+    ]),
   ]
 })
 export class SidebarComponent implements OnInit {
@@ -36,6 +57,7 @@ export class SidebarComponent implements OnInit {
 
   private sidebar:boolean=false;
   private check=false;
+  private scroll=false;
 
   ngOnInit(): void {
 
