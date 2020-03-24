@@ -1,281 +1,44 @@
-.fa-1x {
-    font-size: 1.5rem;
-}
-
-.navbar-toggler.toggler-example {
-    cursor: pointer;
-}
-
-.dark-blue-text {
-    color: #0A38F5;
-}
-
-.dark-pink-text {
-    color: #AC003A;
-}
-
-.dark-amber-text {
-    color: #ff6f00;
-}
-
-.dark-teal-text {
-    color: #004d40;
-}
-
-
-/* desde aca empieza el otro burger */
-
-.ubic {
-    margin-right: 80vw;
-}
-
-#header {
-    width: 100%;
-    height: 90px;
-    display: block;
-    visibility: inherit;
-    position: fixed;
-    opacity: 1;
-    background: white;
-    z-index: 0;
-    cursor: default;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    /* make it look decent enough */
-    background: #232323;
-    color: #cdcdcd;
-    font-family: "Avenir Next", "Avenir", sans-serif;
-    /* overflow-x: hidden; */
-    /* needed because hiding the menu on the right side is not perfect,  */
-}
-
-a {
-    font-family: 'Avenir-Medium';
-    text-decoration: none;
-    color: #232323;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #E99623;
-}
-
-#menuToggle {
-    display: block;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    left: 50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-
-/* check */
-
-#menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-    /* and place it over the hamburger */
-    -webkit-touch-callout: none;
-}
-
-
-/*
- * Just a quick hamburger
- */
-
-#menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #cdcdcd;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
-}
-
-#menuToggle span:first-child {
-    transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-}
-
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-
-#menuToggle input:checked~span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-}
-
-.delay-0-5s {
-    animation-delay: 0.5s;
-}
-
-.delay-1-5s {
-    animation-delay: 1.5s;
-}
-
-.delay-2-5s {
-    animation-delay: 2.5s;
-}
-
-
-/*
- * But let's hide the middle one.
- */
-
-#menuToggle input:checked~span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-
-#menuToggle input:checked~span:nth-last-child(2) {
-    opacity: 1;
-    transform: rotate(-45deg) translate(0, -1px);
-}
-
-.mostrar {
-    display: block;
-}
-
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-
-.abierto {
-    display: block;
-    visibility: inherit;
-    position: fixed;
-    opacity: 1;
-    background: rgba(65, 65, 65, .9);
-    z-index: 105;
-    cursor: default;
-}
-
-.run-animation-0 {
-    position: relative;
-    animation: fadeInLeft 0.25s ease;
-}
-
-.run-animation-1 {
-    position: relative;
-    animation: fadeInLeft .5s ease;
-}
-
-.run-animation-2 {
-    position: relative;
-    animation: fadeInLeft 0.75s ease;
-}
-
-.run-animation-3 {
-    position: relative;
-    animation: fadeInLeft 1.15s ease;
-}
-
-.run-animation-4 {
-    position: relative;
-    animation: fadeInLeft 1.5s ease;
-}
-
-.run-animation-5 {
-    position: relative;
-    animation: fadeInLeft 1.65s ease;
-}
-
-.panel-group {
-    padding: 10px;
-}
-
-.spacer {
-    position: fixed;
-    margin-left: 20%;
-    width: 80%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    opacity: 1;
-    background: rgba(65, 65, 65, .9);
-    cursor: crosshair;
-}
-
-.delay-0-5s {
-    animation-delay: 0.5s;
-}
-
-.delay-1-5s {
-    animation-delay: 1.5s;
-}
-
-.delay-2-5s {
-    animation-delay: 2.5s;
-}
-
-#menu {
-    left: -26%;
-    width: 350px;
-    height: 200vh;
-    padding: 65px;
-    padding-top: 125px;
-    right: -100px;
-    background: white;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-}
-
-#menu li {
-    padding: 10px 0;
-    font-size: 22px;
-}
-
-
-/*
- * And let's fade it in from the left
- */
-
-#menuToggle input:checked~ul {
-    transform: scale(1.0, 1.0);
-    opacity: 1;
-}
-
-@media only screen and (min-width: 1920px) {
+    .fa-1x {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-toggler.toggler-example {
+        cursor: pointer;
+    }
+    
+    .dark-blue-text {
+        color: #0A38F5;
+    }
+    
+    .dark-pink-text {
+        color: #AC003A;
+    }
+    
+    .dark-amber-text {
+        color: #ff6f00;
+    }
+    
+    .dark-teal-text {
+        color: #004d40;
+    }
+    /* desde aca empieza el otro burger */
+    
     .ubic {
         margin-right: 80vw;
     }
+    
+    #header {
+        width: 100%;
+        height: 90px;
+        display: block;
+        visibility: inherit;
+        position: fixed;
+        opacity: 1;
+        background: white;
+        z-index: 0;
+        cursor: default;
+    }
+    
     body {
         margin: 0;
         padding: 0;
@@ -286,25 +49,34 @@ a:hover {
         /* overflow-x: hidden; */
         /* needed because hiding the menu on the right side is not perfect,  */
     }
-    a h4 {
+    
+    a {
+        font-family: 'Avenir-Medium';
         text-decoration: none;
-        color: #232323;
+        color: #67347E;
         transition: color 0.3s ease;
     }
+    /**
     a:hover {
-        color: tomato;
+        color: #E99623;
+    }*/
+    
+    span:nth-child(3) {
+        margin-left: 0.5%;
     }
+    
     #menuToggle {
         display: block;
         position: fixed;
         top: 50px;
         right: 50px;
-        left: 100px;
+        left: 50px;
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
     }
     /* check */
+    
     #menuToggle input {
         display: block;
         width: 40px;
@@ -320,8 +92,9 @@ a:hover {
         -webkit-touch-callout: none;
     }
     /*
-     * Just a quick hamburger
-     */
+ * Just a quick hamburger
+ */
+    
     #menuToggle span {
         display: block;
         width: 33px;
@@ -334,51 +107,67 @@ a:hover {
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
     }
+    
     #menuToggle span:first-child {
         transform-origin: 0% 0%;
     }
+    
     #menuToggle span:nth-last-child(2) {
         transform-origin: 0% 100%;
     }
     /* 
-     * Transform all the slices of hamburger
-     * into a crossmark.
-     */
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+    
     #menuToggle input:checked~span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
-        background: #232323;
+        background: #67347E;
     }
+    
     .delay-0-5s {
         animation-delay: 0.5s;
     }
+    
     .delay-1-5s {
         animation-delay: 1.5s;
     }
+    
     .delay-2-5s {
         animation-delay: 2.5s;
     }
     /*
-     * But let's hide the middle one.
-     */
+ * But let's hide the middle one.
+ */
+    
     #menuToggle input:checked~span:nth-last-child(3) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     }
     /*
-     * Ohyeah and the last one should go the other direction
-     */
+ * Ohyeah and the last one should go the other direction
+ */
+    
     #menuToggle input:checked~span:nth-last-child(2) {
         opacity: 1;
         transform: rotate(-45deg) translate(0, -1px);
     }
+    
     .mostrar {
         display: block;
     }
+    
+    .list-group-item {
+        font-size: 14px !important;
+        padding: 10px !important;
+        border: 0px;
+    }
     /*
-     * Make this absolute positioned
-     * at the top left of the screen
-     */
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+    
     .abierto {
         display: block;
         visibility: inherit;
@@ -386,31 +175,43 @@ a:hover {
         opacity: 1;
         background: rgba(65, 65, 65, .9);
         z-index: 105;
+        cursor: default;
     }
+    
     .run-animation-0 {
         position: relative;
-        animation: bounceInLeft 0.5s ease;
+        animation: fadeInLeft 0.25s ease;
     }
+    
     .run-animation-1 {
         position: relative;
-        animation: bounceInLeft 1s ease;
+        animation: fadeInLeft .5s ease;
     }
+    
     .run-animation-2 {
         position: relative;
-        animation: bounceInLeft 1.5s ease;
+        animation: fadeInLeft 0.75s ease;
     }
+    
     .run-animation-3 {
         position: relative;
-        animation: bounceInLeft 2s ease;
+        animation: fadeInLeft 1.15s ease;
     }
+    
     .run-animation-4 {
         position: relative;
-        animation: bounceInLeft 2.5s ease;
+        animation: fadeInLeft 1.5s ease;
     }
+    
     .run-animation-5 {
         position: relative;
-        animation: bounceInLeft 3s ease;
+        animation: fadeInLeft 1.65s ease;
     }
+    
+    .panel-group {
+        padding: 10px;
+    }
+    
     .spacer {
         position: fixed;
         margin-left: 20%;
@@ -423,20 +224,24 @@ a:hover {
         background: rgba(65, 65, 65, .9);
         cursor: crosshair;
     }
+    
     .delay-0-5s {
         animation-delay: 0.5s;
     }
+    
     .delay-1-5s {
         animation-delay: 1.5s;
     }
+    
     .delay-2-5s {
         animation-delay: 2.5s;
     }
+    
     #menu {
-        left: -21%;
-        width: 400px;
+        left: -26%;
+        width: 350px;
         height: 200vh;
-        padding: 50px;
+        padding: 65px;
         padding-top: 125px;
         right: -100px;
         background: white;
@@ -447,15 +252,227 @@ a:hover {
         transform: translate(100%, 0);
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     }
+    
     #menu li {
-        padding: 10px 0;
+        padding: 10px 10px;
         font-size: 22px;
     }
-    /*
-     * And let's fade it in from the left
-     */
+    
+    hr {
+        z-index: -10;
+        border: 0;
+        border-top: 8px solid;
+        width: 0px;
+        margin: 0;
+        margin-top: -10px;
+        position: absolute;
+        transition: width 0.3s ease-out;
+        -webkit-transition: width 0.3s ease-out;
+        color: #E99623 !important;
+    }
+    
+    a:hover hr {
+        width: 70%;
+    }
+    
+    a:hover #hr3 {
+        width: 60%;
+    }
+    
+    a:hover #hr4 {
+        width: 75%;
+    }
+    
+    a:hover #hr5 {
+        width: 50%;
+    }
+    
     #menuToggle input:checked~ul {
         transform: scale(1.0, 1.0);
         opacity: 1;
     }
-}
+    
+    @media only screen and (min-width: 1920px) {
+        .ubic {
+            margin-right: 80vw;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            /* make it look decent enough */
+            background: #232323;
+            color: #cdcdcd;
+            font-family: "Avenir Next", "Avenir", sans-serif;
+            /* overflow-x: hidden; */
+            /* needed because hiding the menu on the right side is not perfect,  */
+        }
+        a h4 {
+            text-decoration: none;
+            color: #67347E;
+            transition: color 0.3s ease;
+        }
+        #menuToggle {
+            display: block;
+            position: fixed;
+            top: 50px;
+            right: 50px;
+            left: 100px;
+            z-index: 1;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        /* check */
+        #menuToggle input {
+            display: block;
+            width: 40px;
+            height: 32px;
+            position: absolute;
+            top: -7px;
+            left: -5px;
+            cursor: pointer;
+            opacity: 0;
+            /* hide this */
+            z-index: 2;
+            /* and place it over the hamburger */
+            -webkit-touch-callout: none;
+        }
+        /*
+     * Just a quick hamburger
+     */
+        #menuToggle span {
+            display: block;
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            background: #cdcdcd;
+            border-radius: 3px;
+            z-index: 1;
+            transform-origin: 4px 0px;
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+        }
+        #menuToggle span:first-child {
+            transform-origin: 0% 0%;
+        }
+        #menuToggle span:nth-last-child(2) {
+            transform-origin: 0% 100%;
+        }
+        /* 
+     * Transform all the slices of hamburger
+     * into a crossmark.
+     */
+        #menuToggle input:checked~span {
+            opacity: 1;
+            transform: rotate(45deg) translate(-2px, -1px);
+            background: #232323;
+        }
+        .delay-0-5s {
+            animation-delay: 0.5s;
+        }
+        .delay-1-5s {
+            animation-delay: 1.5s;
+        }
+        .delay-2-5s {
+            animation-delay: 2.5s;
+        }
+        /*
+     * But let's hide the middle one.
+     */
+        #menuToggle input:checked~span:nth-last-child(3) {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+        }
+        /*
+     * Ohyeah and the last one should go the other direction
+     */
+        #menuToggle input:checked~span:nth-last-child(2) {
+            opacity: 1;
+            transform: rotate(-45deg) translate(0, -1px);
+        }
+        .mostrar {
+            display: block;
+        }
+        /*
+     * Make this absolute positioned
+     * at the top left of the screen
+     */
+        .abierto {
+            display: block;
+            visibility: inherit;
+            position: fixed;
+            opacity: 1;
+            background: rgba(65, 65, 65, .9);
+            z-index: 105;
+        }
+        .run-animation-0 {
+            position: relative;
+            animation: bounceInLeft 0.5s ease;
+        }
+        .run-animation-1 {
+            position: relative;
+            animation: bounceInLeft 1s ease;
+        }
+        .run-animation-2 {
+            position: relative;
+            animation: bounceInLeft 1.5s ease;
+        }
+        .run-animation-3 {
+            position: relative;
+            animation: bounceInLeft 2s ease;
+        }
+        .run-animation-4 {
+            position: relative;
+            animation: bounceInLeft 2.5s ease;
+        }
+        .run-animation-5 {
+            position: relative;
+            animation: bounceInLeft 3s ease;
+        }
+        .spacer {
+            position: fixed;
+            margin-left: 20%;
+            width: 80%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            opacity: 1;
+            background: rgba(65, 65, 65, .9);
+            cursor: crosshair;
+        }
+        .delay-0-5s {
+            animation-delay: 0.5s;
+        }
+        .delay-1-5s {
+            animation-delay: 1.5s;
+        }
+        .delay-2-5s {
+            animation-delay: 2.5s;
+        }
+        #menu {
+            left: -21%;
+            width: 400px;
+            height: 200vh;
+            padding: 50px;
+            padding-top: 125px;
+            right: -100px;
+            background: white;
+            list-style-type: none;
+            -webkit-font-smoothing: antialiased;
+            /* to stop flickering of text in safari */
+            transform-origin: 0% 0%;
+            transform: translate(100%, 0);
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        }
+        #menu li {
+            padding: 10px 0;
+            font-size: 22px;
+        }
+        /*
+     * And let's fade it in from the left
+     */
+        #menuToggle input:checked~ul {
+            transform: scale(1.0, 1.0);
+            opacity: 1;
+        }
+    }
