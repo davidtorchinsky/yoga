@@ -18,6 +18,18 @@ a {
     padding-right: 5%;
     background-color: white;
     width: 100vw;
+    opacity: 0.5;
+}
+
+.hambur {
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.hambur:hover {
+    opacity: 1;
 }
 
 .mont {
@@ -71,17 +83,6 @@ a {
 
 #navbarSupportedContent {
     margin-right: -10%;
-}
-
-.hambur {
-    opacity: 1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.hambur:hover {
-    opacity: 1;
 }
 
 @media (min-width: 992px) {

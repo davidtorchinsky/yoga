@@ -1,7 +1,6 @@
-<nav [@hamburTrigger]="armado ? 'armado' : 'normal'" class="navbar   top-nav-collapse  navbar-ligth bg-ligth mont" id="header" [ngClass]="{'hambur fixed-top':hamburguesa,'navbar-expand-lg ':!hamburguesa  }" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+<!-- <nav [@hamburTrigger]="armado ? 'armado' : 'normal'" class="navbar   top-nav-collapse  navbar-ligth bg-ligth mont" id="header" [ngClass]="{'hambur fixed-top':hamburguesa,'navbar-expand-lg ':!hamburguesa  }" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
 
 
-    <!-- [ngClass]="{'hambur':hamburguesa}"  -->
 
     <a class="navbar-brand" href="#">
         <img src="{{ruta}}" [ngClass]="{'padLeft':movil}" [ngStyle]="{'heigth':hamburguesa &&!movil ? '' :'75%', 'width':hamburguesa && !movil ? '':'75%', 'margin-left':hamburguesa && !movil ? '40vw':'0%', 'transition':hamburguesa ? '1.5s':'0.5s'}" [ngStyle]="{'heigth':hamburguesa && movil ? '' :'40%', 'width':hamburguesa && movil ? '':'40%', 'margin-left':hamburguesa && movil ? '50vw':'0%', 'transition':hamburguesa ? '1.5s':'0.5s'}"
@@ -11,5 +10,11 @@
  " [ngStyle]="{'right': !movil ? 'inherit':''}"> 
     <span class="navbar-toggler-icon"></span>
   </button>
+
+</nav> -->
+
+
+<nav class="navbar top-nav-collapse  navbar-ligth bg-ligth mont">
+
 
 </nav>

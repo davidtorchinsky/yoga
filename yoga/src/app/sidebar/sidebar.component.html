@@ -1,6 +1,6 @@
 <nav role='navigation' class="ubicm pull-left">
-    <div id="header" [@@header]="scroll ? 'sinOpacidad' : 'conOpacidad'"></div>
-    <div id="menuToggle">
+    <div id="header" [@header]="scroll ? 'sinOpacidad' : 'conOpacidad'" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()"></div>
+    <div id="menuToggle" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
         <!--
       A fake / hidden checkbox is used as click reciever,
       so you can use the :checked selector on it.

@@ -74,13 +74,13 @@ export class HeaderComponent implements OnInit {
     if (number <= 150 ) {
         this.hamburguesa = false;
 
-        this.ruta = 'assets/imagenes/logoChico.png';
+       // this.ruta = 'assets/imagenes/logoChico.png';
       //  console.log(this.hamburguesa)
     }
     if (number > 150) {
       this.hamburguesa = true;
       // tslint:disable-next-line:comment-format
-      this.ruta = 'assets/imagenes/logoChico.png'; //Esta ruta esta por si hay que cambiar la imagen del logo al bajar
+     // this.ruta = 'assets/imagenes/logoChico.png'; //Esta ruta esta por si hay que cambiar la imagen del logo al bajar
       // console.log('You are 100px from the top to bottom ' + this.hamburguesa);
 
 
@@ -89,9 +89,12 @@ export class HeaderComponent implements OnInit {
   }
 
   mouseEnter() {
+   
     this.armado = false;
   }
   mouseLeave() {
+   
+
     this.armado = true;
   }
 
