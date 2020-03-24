@@ -238,8 +238,8 @@
     }
     
     #menu {
-        left: -26%;
-        width: 350px;
+        left: -35%;
+        width: 500px;
         height: 200vh;
         padding: 65px;
         padding-top: 125px;
@@ -272,7 +272,11 @@
     }
     
     a:hover hr {
-        width: 70%;
+        width: 43%;
+    }
+    
+    a:hover #hr2 {
+        width: 71%;
     }
     
     a:hover #hr3 {
@@ -280,11 +284,11 @@
     }
     
     a:hover #hr4 {
-        width: 75%;
+        width: 46%;
     }
     
     a:hover #hr5 {
-        width: 50%;
+        width: 31%;
     }
     
     #menuToggle input:checked~ul {
