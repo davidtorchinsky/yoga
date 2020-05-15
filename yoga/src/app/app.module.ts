@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { from } from 'rxjs';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
