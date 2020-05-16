@@ -14,8 +14,9 @@ export class ContactoComponent implements OnInit {
 
   ngOnInit(): void {
 
-
   }
 
+
 }
+
 
