@@ -60,7 +60,8 @@ h5.consulta {
 
 .form-btn {
     background: transparent;
-    font-size: 1rem;
+    font-size: 1.5vw;
+    font-weight: bold;
     color: #fff;
     cursor: pointer;
     border: 1px solid transparent;
@@ -88,7 +89,7 @@ h5.consulta {
 }
 
 .form-btn::after {
-    background: rgb(77, 18, 104);
+    background: rgb(45, 4, 65);
     ;
     z-index: -1;
     opacity: 0;
@@ -108,10 +109,6 @@ h5.consulta {
 
 .form-btn:active {
     transform: translateY(1px);
-}
-
-.form-btn-error::before {
-    background: #d9534f;
 }
 
 .form-btn-block {
@@ -143,22 +140,18 @@ h5.consulta {
     position: relative;
     display: -ms-flexbox;
     display: flex;
+    width: 14vw;
+    margin-left: 1.5vw;
+    height: 6vh;
+    /* font-size: 2vw;
+    font-weight: bold; */
     /*  margin-top: 0.5vh; */
-}
-
-.form-actions::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background: #999;
-    opacity: 0.3;
 }
 
 .form-actions>* {
     -ms-flex: 1;
     flex: 1;
-    margin-top: 0;
+    margin-top: -2vh;
 }
 
 .form-fieldset {
