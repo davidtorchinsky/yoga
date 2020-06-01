@@ -16,7 +16,7 @@ export class ContactoComponent implements OnInit {
   ancho:any;
 
   constructor(
-    private contactoService:ContactoService
+    /* private contactoService:ContactoService */
   ) { 
     
   }
@@ -34,7 +34,7 @@ export class ContactoComponent implements OnInit {
 
 
 
-  enviarMail(f: NgForm){
+  /* enviarMail(f: NgForm){
     console.log("envio un mail  CON " + this.model.nombre
     +this.model.nombre  
     +this.model.email
@@ -52,6 +52,6 @@ export class ContactoComponent implements OnInit {
 
     f.resetForm();
 
-  }
+  } */
 
 }
