@@ -207,6 +207,10 @@
         position: relative;
         animation: fadeInLeft 1.65s ease;
     }
+    .run-animation-6 {
+        position: relative;
+        animation: fadeInLeft 1.8s ease;
+    }
     
     .panel-group {
         padding: 10px;
@@ -289,6 +293,10 @@
     
     a:hover #hr5 {
         width: 31%;
+    }
+
+    a:hover #hr6 {
+        width: 45%;
     }
     
     #menuToggle input:checked~ul {
