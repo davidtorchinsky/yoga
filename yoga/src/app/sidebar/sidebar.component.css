@@ -519,3 +519,9 @@
             left: -134%;
         }
     }
+
+    @media only screen and (max-width: 321px) {
+        #menu {
+            left: -166%;
+        }
+    }
