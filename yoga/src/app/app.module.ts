@@ -11,12 +11,16 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+
 
 //Rutas
 import {APP_ROUTING} from './app.routes';
 
 
 //Servicios
+import {ContactoService } from './contacto/contacto.service'
 //para el login
 import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
 import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
@@ -47,6 +51,8 @@ export function provideConfig() {
     LoginComponent
   ],
   imports: [
+    HttpModule,
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
@@ -57,7 +63,7 @@ export function provideConfig() {
     {
     provide: AuthServiceConfig,
     useFactory: provideConfig
-  }],
+  }, ContactoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
