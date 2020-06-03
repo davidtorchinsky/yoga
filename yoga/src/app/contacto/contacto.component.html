@@ -1,4 +1,3 @@
-Contacto work
 <div fxLayout="column" fxLayoutAlign="space-around start">
     <h1 class="tituloContacto">CONTACTANOS</h1>
     <hr class="lineaTitulo">
@@ -6,80 +5,86 @@ Contacto work
 </div>
 
 <!-- 1 fila y 2 columnas -->
-<div class="contacto" fxLayout="row" fxLayoutAlign="center center">
-    <!-- para la primer columna son 3 filas -->
+<div style="background-color: rgb(231, 209, 244);">
+    <div class="pantalla" flex=”50”>
+        <!-- fxLayout="row" fxLayoutAlign="center center" -->
+        <!-- para la primer columna son 3 filas -->
 
-    <div fxLayout="column" fxLayoutAlign="space-around center">
-        <!-- direccion -->
-        <div fxLayout="row" fxLayoutAlign="end end">
-            <h5 class="direccion">
-                Alderete 97
-            </h5>
+        <div fxLayout="column" fxLayoutAlign="space-around center">
+            <!-- direccion -->
+            <div fxLayout="row" fxLayoutAlign="end end">
+                <h5 class="direccion">
+                    Alderete 97
+                </h5>
 
-        </div>
-
-        <!-- provincia -->
-        <div fxLayout="row" fxLayoutAlign="end end">
-            <h5 class="provincia">
-                Neuquen
-            </h5>
-
-        </div>
-
-
-        <!-- mapa -->
-        <div fxLayout="row" fxLayoutAlign="space-around center" style="margin-top: -5%">
-            <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1ZnRcJI_e1X9_fL_RMP8FCT8pWyKIo2Yh"></iframe>
-        </div>
-
-    </div>
-
-
-    <!-- formulario -->
-    <div fxLayout="column" fxLayoutAlign="space-around center">
-        <div fxLayout="row" fxLayoutAlign="start start">
-            <h5 class="consulta">
-                Envianos tu consulta
-            </h5>
-
-        </div>
-
-        <!-- Taken from https://codepen.io/jonnitto/project/editor/XRPjxx -->
-        <form class="form-card" fxLayout="column">
-            <fieldset class="form-fieldset" fxLayout="row">
-                <div class="form-element form-input">
-                    <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" placeholder="Por favor ingrese su nombre completo" type="input" required/>
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Nombre</label>
-                </div>
-
-
-                <div class="form-element form-input">
-                    <input id="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz" class="form-element-field" placeholder=" " type="email" required/>
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label" for="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz">Email</label>
-                </div>
-                <div class="form-element form-input">
-                    <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" placeholder="Por favor ingrese su asunto" type="input" required/>
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Asunto</label>
-                </div>
-
-                <div class="form-element form-textarea">
-                    <textarea id="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm" class="form-element-field" placeholder=" "></textarea>
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label" for="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm">Tu mensaje</label>
-                </div>
-
-            </fieldset>
-            <div class="form-actions">
-                <button class="form-btn" type="submit">Enviar</button>
-                <!-- <button class="form-btn-cancel -nooutline" type="reset">Cancel</button> -->
             </div>
 
-        </form>
+            <!-- provincia -->
+            <div fxLayout="row" fxLayoutAlign="end end">
+                <h5 class="provincia">
+                    Neuquen
+                </h5>
+
+            </div>
+
+
+            <!-- mapa -->
+            <div fxLayout="row" fxLayoutAlign="space-around center" style="margin-top: -5%">
+                <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1ZnRcJI_e1X9_fL_RMP8FCT8pWyKIo2Yh"></iframe>
+            </div>
+
+        </div>
+
+
+        <!-- formulario -->
+        <div class="formu">
+            <div class="envFormu">
+                <h5 class="consulta">
+                    Envianos tu consulta
+                </h5>
+
+            </div>
+
+            <!-- Taken from https://codepen.io/jonnitto/project/editor/XRPjxx -->
+            <form class="form-card" fxLayout="column">
+                <fieldset class="form-fieldset" fxLayout="row">
+                    <div class="form-element form-input">
+                        <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" placeholder="Por favor ingrese su nombre completo" type="input" required/>
+                        <div class="form-element-bar"></div>
+                        <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Nombre</label>
+                    </div>
+
+
+                    <div class="form-element form-input">
+                        <input id="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz" class="form-element-field" placeholder=" " type="email" required/>
+                        <div class="form-element-bar"></div>
+                        <label class="form-element-label" for="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz">Email</label>
+                    </div>
+                    <div class="form-element form-input">
+                        <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" placeholder="Por favor ingrese su asunto" type="input" required/>
+                        <div class="form-element-bar"></div>
+                        <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Asunto</label>
+                    </div>
+
+                    <div class="form-element form-textarea">
+                        <textarea id="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm" class="form-element-field" placeholder=" "></textarea>
+                        <div class="form-element-bar"></div>
+                        <label class="form-element-label" for="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm">Tu mensaje</label>
+                    </div>
+
+                </fieldset>
+                <div class="form-actions">
+                    <button class="form-btn tamEnv" type="submit">Enviar</button>
+                    <!-- <button class="form-btn-cancel -nooutline" type="reset">Cancel</button> -->
+                </div>
+
+            </form>
+
+        </div>
+
 
     </div>
+
 
 
 </div>
