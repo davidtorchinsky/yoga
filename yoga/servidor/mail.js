@@ -6,7 +6,7 @@ var nodemailer = require('nodemailer');
 function sendMail(req, res) {
     var params = req.body
     var emisor = params.email // aca va el mail del comentario
-    var destinatario = "info@buenosvientos.com.ar" // aca va el mail de yoga
+    var destinatario = "centrodeyogasadhana@gmail.com" // aca va el mail de yoga
     var asunto = "Comentario de " + params.nombre + " " + params.asunto + " enviado desde la app"
     var texto = "Nombre: " + params.nombre + " " + "\n\nEmail: " + params.email + "\n\nComentario: " + params.mensaje
     var mailOptions = {
@@ -39,8 +39,8 @@ function sendMail(req, res) {
         service: 'Gmail',
         auth: {
 
-            user: 'almendrasbuenosvientos@gmail.com', // ACA COLOCAR EL MAIL Y PASS DEL GMAIL DE YOGA 
-            pass: 'buenosvientos123',
+            user: 'centrodeyogasadhananeuquen@gmail.com', // ACA COLOCAR EL MAIL Y PASS DEL GMAIL DE YOGA 
+            pass: 'sadhananeuquen123',
         }
     })
 
