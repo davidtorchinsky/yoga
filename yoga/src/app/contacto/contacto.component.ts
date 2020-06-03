@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-contacto',
   templateUrl: './contacto.component.html',
-  styleUrls: ['./contacto.component.scss']
+  styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent implements OnInit {
 
@@ -14,27 +14,22 @@ export class ContactoComponent implements OnInit {
   model: any = {};
   conta:boolean=false;
   ancho:any;
+  
 
   constructor(
-    /* private contactoService:ContactoService */
+    private contactoService:ContactoService
   ) { 
     
   }
 
   ngOnInit() {
 
-    this.ancho=window.innerWidth;
     
-    
-    if(this.ancho<416)
-    {
-      this.conta=true;
-    }
   }
 
 
 
-  /* enviarMail(f: NgForm){
+  enviarMail(f: NgForm){
     console.log("envio un mail  CON " + this.model.nombre
     +this.model.nombre  
     +this.model.email
@@ -52,6 +47,6 @@ export class ContactoComponent implements OnInit {
 
     f.resetForm();
 
-  } */
+  }
 
 }
