@@ -7,25 +7,24 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   styleUrls: ['./actividades.component.css'],
   animations: [
 
-    trigger('clickCuadrado', [
+    trigger('gatilloC', [
       // ...
-      state('abierto', style({
+      state('mostrar', style({
 
-        width: '*',
-        opacity: 1,
-
-      })),
-      state('cerrado', style({
-
-        width: '0px',
-        opacity: 0,
+     opacity: 1
 
       })),
-      transition('abierto => cerrado', [
-        animate('0.75s')
+      state('noMostrar', style({
+
+        opacity: 0
+
+      })),
+      transition('mostrar => noMostrar', [
+        animate('0.2s')
       ]),
-      transition('cerrado => abierto', [
-        animate('0.75s')
+      transition('noMostrar => mostrar', [
+        
+        animate('0.3s 0.5s')
       ]),
     ]),
     trigger('header', [
@@ -61,6 +60,37 @@ export class ActividadesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+  
+
+  c1Click = () => {
+    if(this.c1){
+      this.c1 = false;
+      this.c2 = true;
+    }
+    
+  }
+
+  c2Click = () => {
+    if(this.c2){
+      this.c2 = false;
+      this.c1 = true;
+    }
+  }
+
+  c3Click = () => {
+    if(this.c3){
+      this.c3 = false;
+      this.c4 = true;
+    }
+    
+  }
+  c4Click = () => {
+    if(this.c4){
+      this.c4 = false;
+      this.c3 = true;
+    }
+    
   }
 
 }
