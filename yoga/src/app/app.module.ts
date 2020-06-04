@@ -20,6 +20,7 @@ import {APP_ROUTING} from './app.routes';
 // para el login
 import { SocialLoginModule, AuthServiceConfig } from 'angularx-social-login';
 import { GoogleLoginProvider, FacebookLoginProvider } from 'angularx-social-login';
+import { ActividadesComponent } from './actividades/actividades.component';
 
 
 
@@ -45,6 +46,7 @@ export function provideConfig() {
     SidebarComponent,
     ContactoComponent,
     LoginComponent,
+    ActividadesComponent,
   ],
   imports: [
     BrowserModule,

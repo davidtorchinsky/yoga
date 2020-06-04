@@ -1,0 +1,214 @@
+
+
+.col-md-3 {
+    padding: 8px;
+}
+
+.col-md-9 {
+    padding: 8px;
+}
+
+.black {
+    font-family: Avenir-Black;
+}
+
+.roman {
+    font-family: Avenir-Roman;
+}
+
+
+#subtitulo {
+    font-family: Avenir-Roman;
+}
+
+#subtitulo2 {
+    font-family: Avenir-Black;
+}
+
+.cuadrado {
+
+    height: 350px;
+}
+
+.imgMeditando {
+    max-width: 190%;
+    margin: -45%;
+}
+
+.marginColBot2-5{
+    margin-bottom: 2.0rem!important;
+}
+
+.line-height27 {
+    line-height: 27px;
+}
+
+.marginColLeft50 {
+    margin-left: 50%;
+}
+
+.marginColLeft5n {
+    margin-left: -5%;
+}
+
+.marginColLef5 {
+    margin-left: 5%;
+}
+
+.marginLeft100{
+    margin-left: 100px;
+}
+
+.marginLeft68{
+    margin-left: 68px;
+}
+
+
+.imgEscorpion {
+    width: 135%;
+    margin: -25%;
+}
+
+.rowClases{
+    max-height: 90px;
+}
+
+.btn-info {
+    border-color: #67347E;
+    margin-right: 40px;
+}
+
+.marginBotonInfo {
+    margin-left: 30px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.center{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.textoGrande {
+    font-size: 32px;
+}
+
+#clasesYoga {
+    padding-top: 5%;
+}
+
+.naranja {
+    background-color: #E9774D;
+}
+
+.mostaza {
+    background-color: #E99623;
+}
+
+.textoMostaza{
+    color: #E99623;
+    font-family: Avenir-Roman;
+    font-size: 20px;
+}
+
+.textoHorarios {
+    color: white;
+    font-size: 20px;
+    letter-spacing:1px;
+}
+
+.textoHorariosSemana {
+    color: white;
+    font-size: 10px;
+    letter-spacing:1px;
+
+}
+
+.sinPM{
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 0.1%
+}
+
+
+
+.colHorario{
+    max-width: 14%
+}
+
+#barraMostaza {
+    height: 30px;
+    border-right-color: #E99623;
+    border-right-style:solid ;
+    border-right-width: 1.1px;
+}
+
+.vl {
+    border-left: 1px solid #E99623;;
+    height: 30px;
+  }
+
+.lilaClaro {
+    background-color: #815C9E;
+}
+
+.lilaOscuro {
+    background-color: #815C9E;
+}
+
+.violeta {
+    background-color:  #67347E;
+}
+
+h3 {
+    color: white;
+}
+
+hr {
+    z-index: -10;
+    border: 0;
+    border-top: 8px solid;
+    width: 280px;
+    margin: 0;
+    margin-top: -23px;
+    position: absolute;
+    transition: width 0.3s ease-out;
+    -webkit-transition: width 0.3s ease-out;
+    color: #E99623 !important;
+}
+
+
+
+@media only screen and (max-width: 1367px) {
+    
+}
+
+
+@media only screen and (max-width: 1024px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+  
+}
+@media only screen and (max-width: 426px) {
+   
+}
+
+
+@media only screen and (max-width: 411px) {
+  
+}
+
+   
+@media only screen and (max-width: 376px) {
+  
+}
+
+@media only screen and (max-width: 321px) {
+   
+}
