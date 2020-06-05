@@ -20,34 +20,55 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 
       })),
       transition('mostrar => noMostrar', [
-        animate('0.2s')
+        animate('0.3s')
       ]),
       transition('noMostrar => mostrar', [
         
-        animate('0.3s 0.5s')
+        animate('0.8s 0.5s')
       ]),
     ]),
-    trigger('header', [
+    trigger('bajaTexto', [
       // ...
-      state('sinOpacidad', style({
+      state('textoAlto', style({
 
 
-        opacity: 0.5,
-
-      })),
-      state('conOpacidad', style({
-
-
-        opacity: 1,
+       marginTop:"0%"
 
       })),
-      transition('sinOpacidad => conOpacidad', [
-        animate('0.75s')
+      state('textoBajo', style({
+
+        marginTop:"45%",
+      
+
+      })),
+      transition('textoAlto <=> textoBajo', [
+        animate('0.15s 0.5s')
       ]),
-      transition('conOpacidad => sinOpacidad', [
-        animate('0.75s')
+      transition('textoBajo => textoAlto', [
+        animate('0.01s 0s')
       ]),
     ]),
+    trigger(
+      'inOutAnimation', 
+      [
+        transition(
+          ':enter', 
+          [
+            style({ height: 0, opacity: 0 }),
+            animate('0.5s 0.5s ease-out', 
+                    style({ height: 300, opacity: 1 }))
+          ]
+        ),
+        transition(
+          ':leave', 
+          [
+            style({ height: 300, opacity: 1 }),
+            animate('0.001s ease-in', 
+                    style({ height: 0, opacity: 0 }))
+          ]
+        )
+      ]
+    )
   ]
 })
 export class ActividadesComponent implements OnInit {
