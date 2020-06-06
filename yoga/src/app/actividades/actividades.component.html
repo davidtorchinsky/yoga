@@ -7,7 +7,7 @@
         <div class="cuadrado naranja" [ngClass]="{'pointer':c1}" (click)="c1Click()">
 
             <div class="container" [@inOutAnimation] *ngIf="!c1">
-                <div class="row rowClases marginColBot2-5" id="clasesYoga">
+                <div class="row rowClases" id="clasesYoga">
 
                     <div class="col-md-4 marginColLeft5n">
                         <img src="../../assets/images/actividades/escorpion02.png" alt="" class="imgEscorpion">
@@ -21,7 +21,7 @@
                 </div>
                 <div class="row mt-2 mb-1">
                     <div class="col-md-7 offset-md-4">
-                        <p class="textoMostaza line-height27">Excelencia en la Formación de quienes quieran enseñar
+                        <p class="textoBlanco line-height27">Excelencia en la Formación de quienes quieran enseñar
                             Yoga, aprender el Yoga en su integralidad y mejorar la propia práctica personal.</p>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                         <p class="textoHorarios black ">Horarios</p>
                     </div>
                     <div class="col-md-1 sinPM ">
-                        <div class="vl"></div>
+                        <div class="v2"></div>
                     </div>
                     <div class="col-md-2">
                         <p class="textoHorariosSemana">Lunes y Miercoles <br>Martes y Jueves</p>
@@ -40,7 +40,7 @@
 
                 <div class="row">
                     <div class="col-md-6 offset-md-3 ">
-                        <button type="button" class="btn btn-info mostaza marginLeft68">Mas Informacion</button>
+                        <button type="button" class="btn btn-info violeta marginLeft68">Mas Informacion</button>
                     </div>
                 </div>
 
@@ -52,7 +52,7 @@
                         <div class="col">
                             <img src="../../assets/images/actividades/iconoMeditacion.png" alt="" class="maxWidth50">
                             <h3 class=" black">
-                               MEDITACIÓN
+                                MEDITACIÓN
                             </h3>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
 
         </div>
     </div>
- 
+
     <div [ngClass]="{'col-md-3 col-sm-12 ':c2,'col-md-9 col-sm-12':!c2}">
         <div class="cuadrado lilaClaro" [ngClass]="{'pointer':c2}" (click)="c2Click()">
 
@@ -103,8 +103,8 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 offset-md-2 ">
-                        <button type="button" class="btn btn-info violeta marginBotonInfo">Mas Informacion</button>
+                    <div class="col-md-6 offset-md-1 ">
+                        <button type="button" class="btn btn-info violeta">Mas Informacion</button>
                     </div>
                 </div>
 
@@ -137,7 +137,9 @@
 <div class="row">
     <div class="align-items-center justify-content-center"
         [ngClass]="{'col-md-3 col-sm-12 ':c3,'col-md-9 col-sm-12':!c3}">
-        <div class="cuadrado violeta " [ngClass]="{'pointer center':c3}" (click)="c3Click()">
+
+        <div class="cuadrado violeta" [ngClass]="{'pointer':c3}" (click)="c3Click()">
+
             <div class="container" [@inOutAnimation] *ngIf="!c3">
                 <div class="row rowClases marginColBot2-5" id="clasesYoga">
 
@@ -146,7 +148,8 @@
                     </div>
                     <div class="col-md-6 marginColLef5">
                         <h3 class="black">
-                            CURSO DE FORMACIÓN<br> DE PROFESORES DE YOGA </h3>
+                            CURSO DE FORMACIÓN DE PROFESORES DE YOGA
+                        </h3>
                     </div>
 
                 </div>
@@ -164,7 +167,7 @@
                         <div class="vl"></div>
                     </div>
                     <div class="col-md-2">
-                        <p class="textoHorariosSemana">Lunes y Miercoles <br>Martes y Jueves</p>
+                        <p class="textoHorariosSemana">Sabados <br> Por la mañana</p>
 
                     </div>
                 </div>
@@ -177,38 +180,175 @@
 
             </div>
 
-            <div class="container" [@inOutAnimation] *ngIf="c3">
-                <div class="row align-items-center">
-                    <div class="col">
-                        <img src="../../assets/images/actividades/iconoProfesorado.png" alt="" class="maxWidth50">
-                        <h3 class=" black">
-                            CURSO DE FORMACIÓN DE PROFESORES DE YOGA
-                        </h3>
+            <div class="center">
+                <div class="container marginTopContainer10" [@inOutAnimation] *ngIf="c3">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <img src="../../assets/images/actividades/iconoProfesorado.png" alt="" class="maxWidth50">
+                            <h3 class=" black">
+                                CURSO DE FORMACIÓN<br> DE PROFESORES DE YOGA
+                            </h3>
+                        </div>
                     </div>
-                </div>
-                <div class="row mt-2">
-                    <div class="col ">
-                        <i class="icon-plus center" style="color: white;"></i>
+                    <div class="row mt-2">
+                        <div class="col ">
+                            <i class="icon-plus center" style="color: white;"></i>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
 
-
         </div>
+
+
+
+
     </div>
     <div [ngClass]="{'col-md-3 col-sm-12 ':c4,'col-md-9 col-sm-12':!c4}">
         <div class="cuadrado mostaza" [ngClass]="{'pointer':c4}" (click)="c4Click()">
 
             <div class="container" [@inOutAnimation] *ngIf="!c4">
-                <div class="row rowClases" id="clasesYoga">
+                <div class="row rowClases marginColBot2-5" id="clasesYoga">
                     <div class="col-md-8 offset-md-1">
-                     
+
                         <h3 class="black">
                             CURSO DE FORMACIÓN SUPERIOR <br> DE PROFESORES DE YOGA
                         </h3>
                     </div>
-                    
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-1">
+                        <p class="textoBlanco">Para todas las edades, sumate a practicar <br>
+                            mejorando tu postura, fexibilidad y <br>
+                            calidad de vida.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 offset-md-1 colHorario">
+                        <p class="textoHorarios black ">Horarios</p>
+                    </div>
+                    <div class="col-md-1 sinPM ">
+                        <div class="v2"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="textoHorariosSemana">Sabados<br>Por la tarde</p>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <button type="button" class="btn btn-info violeta marginLeft68">Mas Informacion</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="center">
+                <div class="container marginTopContainer" [@inOutAnimation] *ngIf="c4">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <img src="../../assets/images/actividades/iconoAvanzado.png" alt="" class="maxWidth50">
+                            <h3 class=" black">
+                                CURSO SUPERIOR </h3>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col ">
+                            <i class="icon-plus center" style="color: white;"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="row">
+    <div [ngClass]="{'col-md-3 col-sm-12 ':c5,'col-md-9 col-sm-12':!c5}">
+        <div class="cuadrado naranja" [ngClass]="{'pointer':c5}" (click)="c5Click()">
+
+            <div class="container" [@inOutAnimation] *ngIf="!c5">
+                <div class="row rowClases" id="clasesYoga">
+
+                    <div class="col-md-4 marginColLeft5n">
+                        <img src="../../assets/images/actividades/escorpion02.png" alt="" class="imgEscorpion">
+                    </div>
+                    <div class="col-md-6 marginColLef5">
+                        <h3 class="black">
+                           CURSO DE MEDITACIÓN
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="row mt-2 mb-1">
+                    <div class="col-md-7 offset-md-4">
+                        <p class="textoBlanco line-height27">Excelencia en la Formación de quienes quieran enseñar
+                            Yoga, aprender el Yoga en su integralidad y mejorar la propia práctica personal.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 offset-md-4 colHorario">
+                        <p class="textoHorarios black ">Horarios</p>
+                    </div>
+                    <div class="col-md-1 sinPM ">
+                        <div class="v2"></div>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="textoHorariosSemana">Lunes y Miercoles <br>Martes y Jueves</p>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 ">
+                        <button type="button" class="btn btn-info violeta marginLeft68">Mas Informacion</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="center">
+                <div class="container marginTopContainer" [@inOutAnimation] *ngIf="c5">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <img src="../../assets/images/actividades/iconoMeditacion.png" alt="" class="maxWidth50">
+                            <h3 class=" black">
+                                CURSO DE MEDITACIÓN
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col ">
+                            <i class="icon-plus center" style="color: white;"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div [ngClass]="{'col-md-3 col-sm-12 ':c6,'col-md-9 col-sm-12':!c6}">
+        <div class="cuadrado lilaClaro" [ngClass]="{'pointer':c6}" (click)="c6Click()">
+
+            <div class="container" [@inOutAnimation] *ngIf="!c6">
+                <div class="row rowClases" id="clasesYoga">
+                    <div class="col-md-6 offset-md-1">
+                        <h3 class="black">
+                            CURSOS DE FILOSOFIA
+                        </h3>
+                    </div>
+                    <div class="col-md-5 marginColLeft50">
+                        <img src="../../assets/images/actividades/meditando01.png" alt="" class="imgMeditando">
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 offset-md-1">
@@ -231,20 +371,21 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 offset-md-2 ">
-                        <button type="button" class="btn btn-info violeta marginBotonInfo">Mas Informacion</button>
+                    <div class="col-md-6 offset-md-1 ">
+                        <button type="button" class="btn btn-info violeta">Mas Informacion</button>
                     </div>
                 </div>
 
             </div>
 
             <div class="center">
-                <div class="container marginTopContainer" [@inOutAnimation] *ngIf="c4">
+                <div class="container marginTopContainer" [@inOutAnimation] *ngIf="c6">
                     <div class="row align-items-center">
                         <div class="col">
-                            <img src="../../assets/images/actividades/iconoAvanzado.png" alt="" class="maxWidth50">
+                            <img src="../../assets/images/actividades/iconoClases.png" alt="" class="maxWidth50">
                             <h3 class=" black">
-CURSO AVANZADO                            </h3>
+                                CURSOS DE FILOSOFIA
+                            </h3>
                         </div>
                     </div>
                     <div class="row mt-2">
@@ -258,5 +399,5 @@ CURSO AVANZADO                            </h3>
 
         </div>
     </div>
-   
 </div>
+

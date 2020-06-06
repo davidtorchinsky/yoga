@@ -18,6 +18,10 @@
     size: 5%;
 }
 
+.marginTopContainer10 {
+    margin-top: 10%;
+}
+
 .maxWidth50 {
     max-width: 50%;
 }
@@ -89,6 +93,7 @@
 .imgEscorpion {
     width: 135%;
     margin: -25%;
+    z-index: 10;
 }
 
 .rowClases{
@@ -136,6 +141,18 @@
     font-family: Avenir-Roman;
     font-size: 20px;
 }
+.textoVioleta {
+    color: #67347E;
+    font-family: Avenir-Roman;
+    font-size: 20px;
+
+}
+
+.textoBlanco {
+    color: white;
+    font-family: Avenir-Roman;
+    font-size: 20px;
+}
 
 .textoHorarios {
     color: white;
@@ -171,6 +188,11 @@
 
 .vl {
     border-left: 1px solid #E99623;;
+    height: 30px;
+  }
+
+  .v2 {
+    border-left: 1px solid #67347E;;
     height: 30px;
   }
 

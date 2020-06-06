@@ -77,6 +77,8 @@ export class ActividadesComponent implements OnInit {
   c2 = false;
   c3 = false;
   c4 = true;
+  c5 = true;
+  c6 = false;
 
   constructor() { }
 
@@ -110,6 +112,21 @@ export class ActividadesComponent implements OnInit {
     if(this.c4){
       this.c4 = false;
       this.c3 = true;
+    }
+    
+  }
+
+  c5Click = () => {
+    if(this.c5){
+      this.c5 = false;
+      this.c6 = true;
+    }
+    
+  }
+  c6Click = () => {
+    if(this.c6){
+      this.c6 = false;
+      this.c5 = true;
     }
     
   }
