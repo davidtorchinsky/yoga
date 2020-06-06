@@ -24,6 +24,7 @@ import {ContactoService } from './contacto/contacto.service'
 //para el login
 import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
 import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
+import { FooterComponent } from './footer/footer.component';
 
  
  
@@ -48,7 +49,8 @@ export function provideConfig() {
     HeaderComponent,
     SidebarComponent,
     ContactoComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     HttpModule,
