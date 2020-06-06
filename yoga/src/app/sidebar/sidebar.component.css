@@ -502,26 +502,27 @@
     }
     @media only screen and (max-width: 426px) {
         #menu {
-            left: -118%;
+            left: -105%;
         }
     }
 
     
     @media only screen and (max-width: 411px) {
         #menu {
-            left: -122%;
+            left: -105%;
         }
     }
 
        
     @media only screen and (max-width: 376px) {
         #menu {
-            left: -134%;
+            left: -120%;
         }
     }
 
     @media only screen and (max-width: 321px) {
         #menu {
-            left: -166%;
+            left: -150%;
         }
+        
     }
