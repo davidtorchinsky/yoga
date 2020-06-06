@@ -4,11 +4,22 @@
 }
 
 .marginTopContainer{
-    margin-top: 52%;
+    margin-top: 30%;
+}
+
+.marginTop100 {
+    margin-top: 100px;
 }
 
 .col-md-3 {
     padding: 8px;
+}
+.sizeImg{
+    size: 5%;
+}
+
+.maxWidth50 {
+    max-width: 50%;
 }
 
 .col-md-9 {
@@ -40,6 +51,10 @@
 .imgMeditando {
     max-width: 190%;
     margin: -45%;
+}
+
+.iconoMeditacion {
+    width: 40px;
 }
 
 .marginColBot2-5{

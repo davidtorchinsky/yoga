@@ -54,17 +54,17 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
         transition(
           ':enter', 
           [
-            style({ height: 0, opacity: 0 }),
+            style({height:0,  opacity: 0 }),
             animate('0.5s 0.5s ease-out', 
-                    style({ height: 300, opacity: 1 }))
+                    style({height:300, opacity: 1 }))
           ]
         ),
         transition(
           ':leave', 
           [
-            style({ height: 300, opacity: 1 }),
+            style({height:300,   opacity: 1 }),
             animate('0.001s ease-in', 
-                    style({ height: 0, opacity: 0 }))
+                    style({ height:0,  opacity: 0 }))
           ]
         )
       ]
