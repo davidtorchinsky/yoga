@@ -13,6 +13,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { ActividadesComponent } from './actividades/actividades.component';
 
 
 //Rutas
@@ -50,7 +51,8 @@ export function provideConfig() {
     SidebarComponent,
     ContactoComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    ActividadesComponent
   ],
   imports: [
     HttpModule,
