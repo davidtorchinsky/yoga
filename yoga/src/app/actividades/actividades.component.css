@@ -33,6 +33,13 @@
 .black {
     font-family: Avenir-Black;
 }
+.blackL {
+    font-family: Avenir-Black;
+}
+
+.blackM {
+    font-family: Avenir-Black;
+}
 
 .roman {
     font-family: Avenir-Roman;
@@ -233,14 +240,78 @@ hr {
 
 
 @media only screen and (max-width: 1024px) {
-    
+  
+    .blackL {
+        font-size: 20px;
+        font-family: "Avenir-Book";
+    }
+
+  .marginTopMovil{
+      margin-top: 3%;
+  }
+
+    .textoHorarios{
+        font-size: 15px;
+    }
+
+    .textoBlanco {
+        font-size: 16px;
+    }
+
+    .textoMostaza {
+        font-size: 16px;
+    }
+
+    .marginLeft68{
+        margin-left: 55px;
+        margin-top:10px
+    }
+
+    .blackM {
+        font-size: 22px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+
+    .imgMeditando,.imgEscorpion {
+        display: none;
+    }
+
+    .blackL {
+        font-size: 16px;
+        font-family: "Avenir-Book";
+    }
+
+    .blackM {
+        font-size: 18px;
+    }
+
+    .btn-info {
+        font-size: 14px;
+    }
+
+    .colHorario {
+        max-width: 18.5%;
+    }
+
+    
   
 }
 @media only screen and (max-width: 426px) {
-   
+    .marginColLef5 {
+        margin-left: 0%;
+    }
+
+    .vl {
+        border-left: 0px solid #E99623;;
+        height: 30px;
+      }
+    
+      .v2 {
+        border-left: 0px solid #67347E;;
+        height: 30px;
+      }
 }
 
 

@@ -79,10 +79,25 @@ export class ActividadesComponent implements OnInit {
   c4 = true;
   c5 = true;
   c6 = false;
+  ancho = 0;
+  monitor = true;
+  celular = false;
 
   constructor() { }
 
   ngOnInit(): void {
+
+    
+    this.ancho = window.innerWidth;
+    if (this.ancho < 1025) {
+      this.monitor = false;
+    }
+
+    if (this.ancho < 430) {
+      this.celular = true;
+    }
+
+
   }
   
 
