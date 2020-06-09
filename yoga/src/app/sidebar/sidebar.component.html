@@ -6,14 +6,6 @@
       so you can use the :checked selector on it.
       -->
         <input type="checkbox" (click)="click()" ng-model="check.value" [checked]="check" />
-
-        <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
-
         <span></span>
         <span></span>
         <span></span>
@@ -34,7 +26,7 @@
                             <div class="panel-heading">
                                 <h4 class="panel-title">
 
-                                    <a data-toggle="collapse" href="#collapse1">ACTIVIDADES<hr></a>
+                                    <a data-toggle="collapse" href="#collapse1">ACTIVIDADES<hr *ngIf="!mobile"></a>
                                 </h4>
                             </div>
                             <div id="collapse1" class="panel-collapse collapse">
@@ -67,7 +59,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" href="#collapse2">CALENDARIO<hr></a>
+                                    <a data-toggle="collapse" href="#collapse2">CALENDARIO<hr *ngIf="!mobile"></a>
                                 </h4>
                             </div>
                             <div id="collapse2" class="panel-collapse collapse">
@@ -91,7 +83,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" href="#collapse3">YOGA POR EL MUNDO<hr id="hr2"></a>
+                                    <a data-toggle="collapse" href="#collapse3">YOGA POR EL MUNDO<hr id="hr2" *ngIf="!mobile"></a>
                                 </h4>
                             </div>
                             <div id="collapse3" class="panel-collapse collapse">
@@ -121,7 +113,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" href="#collapse4">SOBRE NOSOTROS<hr id="hr3"></a>
+                                    <a data-toggle="collapse" href="#collapse4">SOBRE NOSOTROS<hr id="hr3" *ngIf="!mobile"></a>
                                 </h4>
                             </div>
                             <div id="collapse4" class="panel-collapse collapse">
@@ -144,17 +136,16 @@
 
                 </a>
 
-                <li routerLinkActive="active">
-                    <a class="nav-link" [routerLink]="['contacto']">CONTACTANOS
-                            <hr id="hr4"> </a>
-                </li>
-                <li routerLinkActive="active">
-                    <a class="nav-link" [routerLink]="['login']">LOGIN
-                                <hr id="hr4"> </a>
-                </li>
                 <a href="#">
-                    <li [ngClass]="{'run-animation-5': sidebar}">SEGUINOS
-                        <hr id="hr5">
+                    <li [ngClass]="{'run-animation-5': sidebar}">CONTACTANOS
+                        <hr id="hr6" *ngIf="!mobile">
+                    </li>
+                </a>
+
+                
+                <a href="#">
+                    <li [ngClass]="{'run-animation-6': sidebar}">SEGUINOS
+                        <hr id="hr5" *ngIf="!mobile">
                     </li>
                 </a>
             </ul>

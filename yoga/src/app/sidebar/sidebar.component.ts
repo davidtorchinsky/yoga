@@ -19,7 +19,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 
         width: '0px',
         opacity: 0,
-     
+
       })),
       transition('abierto => cerrado', [
         animate('0.75s')
@@ -32,15 +32,15 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       // ...
       state('sinOpacidad', style({
 
-       
+
         opacity: 0.5,
 
       })),
       state('conOpacidad', style({
 
-       
+
         opacity: 1,
-     
+
       })),
       transition('sinOpacidad => conOpacidad', [
         animate('0.75s')
@@ -55,21 +55,26 @@ export class SidebarComponent implements OnInit {
 
   constructor() { }
 
-  private sidebar:boolean=false;
-  private check=false;
-  private scroll=false;
+  private sidebar = false;
+  private check = false;
+  private scroll = false;
   private number = 0;
+  private ancho;
+  mobile = false;
 
   ngOnInit(): void {
 
-    
+    this.ancho = window.innerWidth;
+    if (this.ancho < 769) {
+      this.mobile = true;
+    }
   }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-   
+
     this.number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-  
+
     if (this.number <= 150 ) {
         this.scroll = false;
 
@@ -87,22 +92,23 @@ export class SidebarComponent implements OnInit {
    // document.getElementById('navbarSupportedContent').classList.remove('show');
   }
 
-  click(){
-    this.sidebar=!this.sidebar;
-    this.check=!this.check; 
+  click() {
+    this.sidebar = !this.sidebar;
+    this.check = !this.check;
   }
 
-  vacio(){
+  vacio() {
 
   }
 
   mouseEnter() {
-   
+
     this.scroll = false;
   }
   mouseLeave() {
-   if(this.number>150)
+   if (this.number > 150) {
       this.scroll = true;
+   }
   }
 
 }

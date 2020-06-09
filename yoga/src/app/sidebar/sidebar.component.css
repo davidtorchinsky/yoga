@@ -207,6 +207,10 @@
         position: relative;
         animation: fadeInLeft 1.65s ease;
     }
+    .run-animation-6 {
+        position: relative;
+        animation: fadeInLeft 1.8s ease;
+    }
     
     .panel-group {
         padding: 10px;
@@ -289,6 +293,10 @@
     
     a:hover #hr5 {
         width: 31%;
+    }
+
+    a:hover #hr6 {
+        width: 45%;
     }
     
     #menuToggle input:checked~ul {
@@ -479,4 +487,42 @@
             transform: scale(1.0, 1.0);
             opacity: 1;
         }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        #menu {
+            left: -52.5%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #menu {
+            left: -66%;
+        }
+    }
+    @media only screen and (max-width: 426px) {
+        #menu {
+            left: -105%;
+        }
+    }
+
+    
+    @media only screen and (max-width: 411px) {
+        #menu {
+            left: -105%;
+        }
+    }
+
+       
+    @media only screen and (max-width: 376px) {
+        #menu {
+            left: -120%;
+        }
+    }
+
+    @media only screen and (max-width: 321px) {
+        #menu {
+            left: -150%;
+        }
+        
     }
