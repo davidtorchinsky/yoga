@@ -9,6 +9,14 @@
     background-color: rgb(231, 209, 244);
 }
 
+
+.violeta{
+    color: rgb(77, 18, 104);
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: -0.5%;
+}
+
 .formu {
     display: flex;
     flex-direction: column;
@@ -23,22 +31,34 @@
 
 .tituloContacto {
     /* size: 255px; */
-    font-size: 95px;
+  
     font-weight: bold;
     color: rgb(77, 18, 104);
     margin-top: 5%;
-    z-index: 3;
-    margin-left: 5%;
+    z-index: 0;
 }
 
-hr.lineaTitulo {
+hr {
+    z-index: -10;
+    border: 0;
+    border-top: 8px solid;
+    width: 300px;
+    margin: 0;
+    margin-top: -23px;
+    position: absolute;
+    transition: width 0.3s ease-out;
+    -webkit-transition: width 0.3s ease-out;
+    color: #E99623 !important;
+}
+
+/* hr.lineaTitulo {
     border: 10px solid rgb(230, 141, 78);
     width: 25.5%;
     background-color: black;
     margin-top: -2.2%;
     margin-left: 5%;
-    z-index: 1;
-}
+    z-index: -1;
+} */
 
 .contacto {
     background-color: rgb(231, 209, 244);
@@ -54,23 +74,20 @@ hr.lineaTitulo {
     /*  margin-left: 35%; */
 }
 
+
 h5.direccion {
-    margin-top: 25px;
-    margin-left: 400px;
     color: rgb(77, 18, 104);
     font-size: 25px;
     font-weight: bold;
 }
 
 h5.provincia {
-    margin-top: -10%;
-    margin-left: 420px;
     color: rgb(77, 18, 104);
     font-size: 25px;
 }
 
 h5.consulta {
-    margin-top: 5%;
+    
     margin-left: 4%;
     color: rgb(230, 141, 78);
     font-size: 47px;
@@ -93,6 +110,9 @@ h5.consulta {
     z-index: 0;
     transition: transform 0.28s ease;
     will-change: transform;
+    margin-left: 3%;
+    margin-top: 6%;
+
 }
 
 .form-btn::before,
@@ -146,7 +166,7 @@ h5.consulta {
     transition: all 0.56s cubic-bezier(0.25, 0.8, 0.25, 1);
     max-width: 5000px;
     padding: 0;
-    margin: 50px auto;
+    margin-right: 50px auto;
 }
 
 .form-actions {
@@ -230,7 +250,7 @@ h5.consulta {
     line-height: 1.5rem;
     pointer-events: none;
     padding-left: 0.125rem;
-    z-index: 1;
+    z-index: 0;
     font-size: 27px;
     font-weight: normal;
     white-space: nowrap;
@@ -316,7 +336,7 @@ textarea.form-element-field:not(:placeholder-shown)~.form-element-label {
 
 textarea.form-element-field {
     height: auto;
-    min-height: 12rem;
+    min-height: 14rem;
     height: 4px;
     border: solid rgb(230, 141, 78);
     /* background: rgb(230, 141, 78); */
@@ -369,22 +389,23 @@ body {
 }
 
 @media only screen and (max-width: 1366px) {
+
     .tituloContacto {
         /* size: 255px; */
-        font-size: 95px;
+     
         font-weight: bold;
         color: rgb(77, 18, 104);
         margin-top: 5%;
-        z-index: 3;
-        margin-left: 5%;
+        z-index: 0;
+       
     }
     hr.lineaTitulo {
         border: 6px solid rgb(230, 141, 78);
         width: 36.5%;
         background-color: black;
         margin-top: -2.5%;
-        margin-left: 5%;
-        z-index: 1;
+       
+        z-index: -10;
     }
     .contacto {
         background-color: rgb(231, 209, 244);
@@ -399,16 +420,12 @@ body {
         /*  margin-left: 35%; */
     }
     h5.direccion {
-        margin-top: 25px;
-        margin-left: 222px;
         color: rgb(77, 18, 104);
         font-size: 25px;
         font-weight: bold;
         margin-bottom: 0;
     }
     h5.provincia {
-        margin-top: -18%;
-        margin-left: 247px;
         color: rgb(77, 18, 104);
         font-size: 25px;
         margin-bottom: 0;
@@ -426,14 +443,29 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
+    textarea.form-element-field {
+        height: auto;
+        min-height: 10rem;
+        height: 4px;
+        border: solid rgb(230, 141, 78);
+        /* background: rgb(230, 141, 78); */
+    }
+    
+.form-btn {
+
+    margin-left: 4%;
+    margin-top: 5%;
+
+}
+    
     .tituloContacto {
         /* size: 255px; */
-        font-size: 71px;
+        
         font-weight: bold;
         color: rgb(77, 18, 104);
         margin-top: 10%;
-        z-index: 3;
-        margin-left: 5%;
+        z-index: 0;
+    
     }
     hr.lineaTitulo {
         border: 4px solid rgb(230, 141, 78);
@@ -441,7 +473,7 @@ body {
         background-color: black;
         margin-top: -2.5%;
         margin-left: 5%;
-        z-index: 1;
+        z-index: -10;
     }
     .contacto {
         background-color: rgb(231, 209, 244);
@@ -456,16 +488,13 @@ body {
         /*  margin-left: 35%; */
     }
     h5.direccion {
-        margin-top: 0;
-        margin-left: 166px;
+
         color: rgb(77, 18, 104);
         font-size: 25px;
         font-weight: bold;
         margin-bottom: -28px;
     }
     h5.provincia {
-        margin-top: -18%;
-        margin-left: 194px;
         color: rgb(77, 18, 104);
         font-size: 25px;
         margin-bottom: 0;
@@ -483,6 +512,28 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    h5{
+        text-align: center!important;
+    }
+    .h5{
+        text-align: center!important;
+    }
+    
+    textarea.form-element-field {
+        height: auto;
+        min-height: 8rem;
+        height: 4px;
+        border: solid rgb(230, 141, 78);
+        /* background: rgb(230, 141, 78); */
+    }
+
+.form-btn {
+
+    margin-left: 7%;
+    margin-top: 25%;
+
+}
+
     .pantalla {
         display: flex;
         flex-direction: column;
@@ -512,7 +563,7 @@ body {
         font-weight: bold;
     }
     .tituloContacto {
-        font-size: 95px;
+     
         padding-top: 9%;
     }
     hr.lineaTitulo {
@@ -521,18 +572,16 @@ body {
         background-color: black;
         margin-top: -4%;
         margin-left: 5%;
-        z-index: 1;
+        z-index: -10;
     }
     h5.direccion {
-        margin-top: 25px;
-        margin-left: 0;
+
         color: rgb(77, 18, 104);
         font-size: 25px;
         font-weight: bold;
     }
     h5.provincia {
-        margin-top: 23%;
-        margin-left: 0;
+
         color: rgb(77, 18, 104);
         font-size: 25px;
     }
@@ -550,6 +599,27 @@ body {
 }
 
 @media only screen and (max-width: 426px) {
+    h5{
+        text-align: center!important;
+    }
+    .h5{
+        text-align: center!important;
+    }
+
+    textarea.form-element-field {
+        height: auto;
+        min-height: 2.5rem;
+        height: 4px;
+        border: solid rgb(230, 141, 78);
+        /* background: rgb(230, 141, 78); */
+    }
+    
+.form-btn {
+
+    margin-left: 8%;
+    margin-top: 5%;
+
+}
     .pantalla {
         display: flex;
         flex-direction: column;
@@ -579,7 +649,7 @@ body {
         font-weight: bold;
     }
     .tituloContacto {
-        font-size: 52px;
+      
         padding-top: 25%;
     }
     hr.lineaTitulo {
@@ -588,18 +658,16 @@ body {
         background-color: black;
         margin-top: -6%;
         margin-left: 5%;
-        z-index: 1;
+        z-index: -10;
     }
     h5.direccion {
-        margin-top: 25px;
-        margin-left: 0;
+
         color: rgb(77, 18, 104);
         font-size: 25px;
         font-weight: bold;
     }
     h5.provincia {
-        margin-top: 23%;
-        margin-left: 0;
+
         color: rgb(77, 18, 104);
         font-size: 25px;
     }
@@ -614,6 +682,10 @@ body {
         margin-left: 24%;
         margin-top: 41%;
         height: 56px;
+    }
+    .mapa {
+        margin: 0;
+        /*  margin-left: 35%; */
     }
 }
 
@@ -647,7 +719,7 @@ body {
         font-weight: bold;
     }
     .tituloContacto {
-        font-size: 50px;
+       
         padding-top: 42%;
     }
     hr.lineaTitulo {
@@ -656,18 +728,15 @@ body {
         background-color: black;
         margin-top: -6%;
         margin-left: 5%;
-        z-index: 1;
+        z-index: -10;
     }
     h5.direccion {
-        margin-top: 25px;
-        margin-left: 0;
         color: rgb(77, 18, 104);
         font-size: 25px;
+
         font-weight: bold;
     }
     h5.provincia {
-        margin-top: 23%;
-        margin-left: 0;
         color: rgb(77, 18, 104);
         font-size: 25px;
     }
@@ -716,7 +785,7 @@ body {
         font-weight: bold;
     }
     .tituloContacto {
-        font-size: 46px;
+       
         padding-top: 29%;
     }
     hr.lineaTitulo {
@@ -725,18 +794,14 @@ body {
         background-color: black;
         margin-top: -6%;
         margin-left: 5%;
-        z-index: 1;
+        z-index: -10;
     }
     h5.direccion {
-        margin-top: 25px;
-        margin-left: 0;
         color: rgb(77, 18, 104);
         font-size: 25px;
         font-weight: bold;
     }
     h5.provincia {
-        margin-top: 23%;
-        margin-left: 0;
         color: rgb(77, 18, 104);
         font-size: 25px;
     }
@@ -783,7 +848,7 @@ body {
         font-weight: bold;
     }
     .tituloContacto {
-        font-size: 39px;
+        
         padding-top: 29%;
     }
     hr.lineaTitulo {
@@ -792,18 +857,15 @@ body {
         background-color: black;
         margin-top: -6%;
         margin-left: 5%;
-        z-index: 1;
+        z-index: -10;
     }
     h5.direccion {
-        margin-top: 25px;
-        margin-left: 0;
+
         color: rgb(77, 18, 104);
         font-size: 25px;
         font-weight: bold;
     }
     h5.provincia {
-        margin-top: 23%;
-        margin-left: 0;
         color: rgb(77, 18, 104);
         font-size: 25px;
     }

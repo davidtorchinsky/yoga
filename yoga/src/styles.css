@@ -57,3 +57,7 @@
     font-family: 'Avenir-Roman';
     src: url(assets/fonts/AvenirLTStd-Roman.otf)
 }
+
+.container {
+    max-width:90%;
+}

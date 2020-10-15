@@ -24,7 +24,7 @@ import { NgForm } from '@angular/forms';
       // ...
       state('armado', style({
 
-        opacity: 0.8,
+        opacity: 0,
 
       })),
       state('normal', style({

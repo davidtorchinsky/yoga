@@ -33,7 +33,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       state('sinOpacidad', style({
 
 
-        opacity: 0.5,
+        opacity: 0,
 
       })),
       state('conOpacidad', style({
