@@ -4,7 +4,7 @@
 }
 
 .marginTopContainer{
-    margin-top: 30%;
+    margin-top: 10%;
 }
 
 .marginTop100 {
@@ -30,6 +30,17 @@
     padding: 8px;
 }
 
+.centerImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .rigthImg {
+    float: right;
+  }
+
 .black {
     font-family: Avenir-Black;
 }
@@ -48,6 +59,7 @@
 
 #subtitulo {
     font-family: Avenir-Roman;
+    line-height: 1rem;
 }
 
 #subtitulo2 {
@@ -61,7 +73,8 @@
 
 .imgMeditando {
     max-width: 190%;
-    margin: -45%;
+    margin-top: -40%;
+    margin-left: -45%;
 }
 
 .iconoMeditacion {
@@ -98,9 +111,21 @@
 
 
 .imgEscorpion {
-    width: 135%;
-    margin: -25%;
+    width: 80%;
+    margin-top: -20%;
     z-index: 10;
+}
+
+.imgArbol {
+    width: 94%;
+    margin-top: -60%;
+    margin-left: 50%;
+}
+
+.imgCamello {
+    width: 100%;
+    margin-top: -36%;
+    margin-left: 40%;
 }
 
 .rowClases{
@@ -126,6 +151,7 @@
     text-align: center;
     justify-content: center;
 }
+
 
 .textoGrande {
     font-size: 32px;
@@ -176,8 +202,9 @@
 
 .sinPM{
     padding: 0 !important;
-    margin: 0 !important;
-    max-width: 0.1%
+     margin: 0 !important;
+    max-width: 0.1%;
+  
 }
 
 

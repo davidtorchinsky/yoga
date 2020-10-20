@@ -5,15 +5,15 @@
     <h1 id="subtitulo2">ACTIVIDADES</h1>
     <hr>
 
-    <div class="row">
+    <div class="row" style="margin-top: 4%;">
         <div [ngClass]="{'col-md-3 col-sm-12 ':c1,'col-md-9 col-sm-12':!c1}">
             <div class="cuadrado naranja" [ngClass]="{'pointer':c1}" (click)="c1Click()">
 
                 <div class="container" [@inOutAnimation] *ngIf="!c1">
                     <div class="row rowClases" id="clasesYoga">
 
-                        <div class="col-md-2 col-lg-4 marginColLeft5n">
-                            <img src="../../assets/images/actividades/escorpion02.png" alt="" class="imgEscorpion">
+                        <div class="col-md-2 col-lg-4 marginColLeft5n align-self-center">
+                            <img src="../../assets/images/actividades/iconoMeditacion.png" alt="" class="rigthImg">
                         </div>
                         <div class="col-md-10 col-lg-6 col-sm-12 marginColLef5">
                             <h3 class="black">
@@ -24,7 +24,7 @@
                     </div>
                     <div class="row mt-2 mb-1">
                         <div class="col-lg-7 offset-lg-4 col-md-8 offset-md-2">
-                            <p class="textoBlanco line-height27">Excelencia en la Formación de quienes quieran enseñar Yoga, aprender el Yoga en su integralidad y mejorar la propia práctica personal.</p>
+                            <p class="textoBlanco line-height27">Sat Sangs semanales gratuitos a todo público que incluyen meditación en silencio, cantos y enseñanza.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -34,15 +34,15 @@
                         <div class="col-md-1 sinPM ">
                             <div class="v2"></div>
                         </div>
-                        <div class="col-lg-2 col-md-4 offset-sm-3">
+                        <div class="col-lg-2 col-md-4">
                             <p class="textoHorariosSemana">Lunes y Miercoles <br>Martes y Jueves</p>
 
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 offset-lg-3 offset-md-1 ">
-                            <button type="button" class="btn btn-info violeta marginLeft68">Más Información</button>
+                        <div class="col-md-6 offset-lg-4 offset-md-1 ">
+                            <button type="button" class="btn btn-info violeta ">Más Información</button>
                         </div>
                     </div>
 
@@ -80,13 +80,15 @@
                                 CLASES DE YOGA
                             </h3>
                         </div>
-                        <div class="col-md-5 marginColLeft50 marginTopMovil">
-                            <img src="../../assets/images/actividades/meditando01.png" alt="" class="imgMeditando">
+                        <div class="col-md-5 col-sm-0 marginColLeft50 marginTopMovil">
+                            <img src="../../assets/images/actividades/arbol01.png" alt="" class="imgArbol">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 offset-md-1 marginTopMovil">
-                            <p class="textoMostaza">Para todas las edades, sumate a practicar <br> mejorando tu postura, fexibilidad y <br> calidad de vida.</p>
+                        <div class="col-md-8 offset-md-1 marginTopMovil">
+                            <p class="textoMostaza">Para todas las edades, comenzá cuanto antes a practicar
+                                 mejorando tu postura, fexibilidad y calidad de vida. Aprendiendo posturas y respiración con corrección individual
+                            </p>
                         </div>
                     </div>
                     <div class="row">
@@ -114,7 +116,7 @@
                     <div class="container marginTopContainer" [@inOutAnimation] *ngIf="c2">
                         <div class="row align-items-center">
                             <div class="col">
-                                <img src="../../assets/images/actividades/iconoClases.png" alt="" class="maxWidth50">
+                                <img src="../../assets/images/actividades/iconoGuerrero.png" alt="" class="maxWidth50">
                                 <h3 class=" black">
                                     CLASES DE YOGA
                                 </h3>
@@ -173,18 +175,18 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 offset-md-3 ">
-                            <button type="button" class="btn btn-info mostaza marginLeft68">Más Información</button>
+                        <div class="col-md-6 offset-md-4 ">
+                            <button type="button" class="btn btn-info mostaza ">Más Información</button>
                         </div>
                     </div>
 
                 </div>
 
                 <div class="center">
-                    <div class="container marginTopContainer10" [@inOutAnimation] *ngIf="c3">
+                    <div class="container " [@inOutAnimation] *ngIf="c3">
                         <div class="row align-items-center">
                             <div class="col">
-                                <img src="../../assets/images/actividades/iconoProfesorado.png" alt="" class="maxWidth50">
+                                <img src="../../assets/images/actividades/iconoEscorpion.png" alt="" class="maxWidth50">
                                 <h3 class=" blackM">
                                     CURSO DE FORMACIÓN<br> DE PROFESORES DE YOGA
                                 </h3>
@@ -217,11 +219,14 @@
                                 <div class="blackM">DE PROFESORES DE YOGA</div>
                             </h3>
                         </div>
+                        <div class="col-md-4 marginColLeft50 marginTopMovil">
+                            <img src="../../assets/images/actividades/camello02.png" alt="" class="imgCamello">
+                        </div>
 
                     </div>
                     <div class="row">
-                        <div class="col-md-6 offset-md-1">
-                            <p class="textoBlanco">Para todas las edades, sumate a practicar <br> mejorando tu postura, fexibilidad y <br> calidad de vida.</p>
+                        <div class="col-md-7 offset-md-1">
+                            <p class="textoBlanco">En este segundo nivel se estudia en profundidad la Filosofía de la India, con énfasis en el Samkhya, Yoga Sutras de Patanjali y Vedanta.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -238,8 +243,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 ">
-                            <button type="button" class="btn btn-info violeta marginLeft68">Más Información</button>
+                        <div class="col-md-6  offset-md-1">
+                            <button type="button" class="btn btn-info violeta ">Más Información</button>
                         </div>
                     </div>
 
@@ -249,7 +254,7 @@
                     <div class="container marginTopContainer" [@inOutAnimation] *ngIf="c4">
                         <div class="row align-items-center">
                             <div class="col">
-                                <img src="../../assets/images/actividades/iconoAvanzado.png" alt="" class="maxWidth50">
+                                <img src="../../assets/images/actividades/iconoCamello.png" alt="" class="maxWidth50">
                                 <h3 class=" black">
                                     CURSO SUPERIOR </h3>
                             </div>
@@ -277,7 +282,7 @@
                     <div class="row rowClases" id="clasesYoga">
 
                         <div class="col-md-4 marginColLeft5n">
-                            <img src="../../assets/images/actividades/escorpion02.png" alt="" class="imgEscorpion">
+                            <img src="../../assets/images/actividades/iconoMeditacion.png" alt="" class="rigthImg">
                         </div>
                         <div class="col-md-6 marginColLef5">
                             <h3 class="black">
@@ -305,8 +310,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 offset-md-3 ">
-                            <button type="button" class="btn btn-info violeta marginLeft68">Más Información</button>
+                        <div class="col-md-6 offset-md-4 ">
+                            <button type="button" class="btn btn-info violeta">Más Información</button>
                         </div>
                     </div>
 
@@ -344,8 +349,8 @@
                                 CURSOS DE FILOSOFIA
                             </h3>
                         </div>
-                        <div class="col-md-5 marginColLeft50">
-                            <img src="../../assets/images/actividades/meditando01.png" alt="" class="imgMeditando">
+                        <div class="col-md-5 ">
+                             <img src="../../assets/images/actividades/iconoClases.png" alt="" class="centerImg">
                         </div>
                     </div>
                     <div class="row">
