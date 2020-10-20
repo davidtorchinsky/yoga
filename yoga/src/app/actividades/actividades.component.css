@@ -40,6 +40,9 @@
   .rigthImg {
     float: right;
   }
+  .leftImg {
+    float: left;
+  }
 
 .black {
     font-family: Avenir-Black;
