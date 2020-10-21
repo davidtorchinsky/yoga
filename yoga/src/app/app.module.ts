@@ -29,6 +29,7 @@ import { FooterComponent } from './footer/footer.component';
 import { YogaNaturalezaComponent } from './yoga-naturaleza/yoga-naturaleza.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { YogaEsComponent } from './yoga-es/yoga-es.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 
@@ -58,7 +59,8 @@ export function provideConfig() {
     ActividadesComponent,
     YogaNaturalezaComponent,
     NosotrosComponent,
-    YogaEsComponent
+    YogaEsComponent,
+    CarouselComponent
   ],
   imports: [
     HttpModule,
