@@ -19,6 +19,7 @@ a {
     background-color: white;
     width: 100vw;
     opacity: 0;
+    padding: 0;
 }
 
 .hambur {

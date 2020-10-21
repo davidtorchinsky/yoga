@@ -1,4 +1,4 @@
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="z-index: 0;">
     <ol class="carousel-indicators" *ngIf="!movil">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -22,27 +22,29 @@
 
     <div class="carousel-inner" *ngIf="!movil">
         <div class="carousel-item active">
-            <img src="../../assets/images/carrusel/header01.png" class="d-block w-100" alt="..." />
-
-            <div class="carousel-content">
-           <!--      <h5 class="bounceInRight wow animated">
-                    HACÉ RECETAS<br />DELICIOESAS CON
-                </h5>
-                <h1 class="bounceInLeft wow animated">HARINA</h1>
-                <h2 class="bounceInRight wow animated">DE ALMENDRAS</h2> -->
+            <img src="../../assets/images/carrusel/header02.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block"></div>
+            <div class="carousel-content ">
+                <h1 class="big bounceInLeft wow animated ">Vivimos el <br>
+                <div class="big black bounceInRight wow animated">YOGA TRADICIONAL</div> </h1>
+                <hr>
 
             </div>
+          
             <!-- container -->
         </div>
         <div class="carousel-caption d-none d-md-block"></div>
         <div class="carousel-item">
-            <img src="../../assets/images/carrusel/header02.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block"></div>
+            <img src="../../assets/images/carrusel/header03.png" class="d-block w-100" alt="..." />
+
+            <div class="carousel-content ">
+                <h1 class="bounceInLeft wow animated ">Clases de <br>
+                <div class="black bounceInRight wow animated">YOGA ONLINE</div> </h1>
+                <hr>
+
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="../../assets/images/carrusel/header03.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block"></div>
-        </div>
+    
     </div>
 
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">

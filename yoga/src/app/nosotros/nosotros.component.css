@@ -49,6 +49,11 @@ margin-top: 10%;
 font-family: Avenir-Roman;
 }
 
+.instructores{
+    color:#67347E;
+    font-family: Avenir-Roman;
+}
+
 hr {
 z-index: -10;
 border: 0;

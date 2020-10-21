@@ -292,11 +292,12 @@
     }
     
     a:hover #hr5 {
-        width: 31%;
+        width: 35%;
+        
     }
 
     a:hover #hr6 {
-        width: 45%;
+        width: 50%;
     }
     
     #menuToggle input:checked~ul {
