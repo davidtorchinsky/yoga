@@ -1,0 +1,63 @@
+    .textCenter{
+        text-align: center;
+    }
+    
+    .retiros{
+       
+        font-family: Avenir-Black;
+        color: #E99623;
+        line-height: 0.8;
+        font-size: 1.65rem;
+    }
+.viajes{
+    font-family: Avenir-Black;
+    color: #67347E;
+    line-height: 0.8;
+    font-size: 1.65rem;
+}
+
+    .regular{
+        font-family: Avenir-Roman;
+    }
+
+    img{
+        width: 100%;
+    }
+
+  .aligL{
+    text-align: end;
+  }
+
+  #subtitulo {
+    font-family: Avenir-Roman;
+    line-height: 1rem;
+}
+
+#subtitulo2 {
+    font-family: Avenir-Black;
+}
+
+.textoRetiros {
+    color:#67347E;
+    margin-top: 10%;
+    font-family: Avenir-Roman;
+}
+
+.textoViajes{
+    color:#E9774D;
+    margin-top: 10%;
+    font-family: Avenir-Roman;
+}
+
+hr {
+    z-index: -10;
+    border: 0;
+    border-top: 8px solid;
+    width: 280px;
+    margin: 0;
+    margin-top: -23px;
+    position: absolute;
+    transition: width 0.3s ease-out;
+    -webkit-transition: width 0.3s ease-out;
+    color: #E99623 !important;
+}

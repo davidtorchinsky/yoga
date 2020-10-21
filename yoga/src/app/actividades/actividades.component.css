@@ -4,7 +4,7 @@
 }
 
 .marginTopContainer{
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .marginTop100 {
@@ -114,8 +114,8 @@
 
 
 .imgEscorpion {
-    width: 80%;
-    margin-top: -20%;
+    width: 110%;
+    margin-top: -25%;
     z-index: 10;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .imgCamello {
-    width: 100%;
+    width: 120%;
     margin-top: -36%;
     margin-left: 40%;
 }
