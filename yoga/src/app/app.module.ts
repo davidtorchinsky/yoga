@@ -28,6 +28,7 @@ import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-logi
 import { FooterComponent } from './footer/footer.component';
 import { YogaNaturalezaComponent } from './yoga-naturaleza/yoga-naturaleza.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { YogaEsComponent } from './yoga-es/yoga-es.component';
 
 
 
@@ -56,7 +57,8 @@ export function provideConfig() {
     FooterComponent,
     ActividadesComponent,
     YogaNaturalezaComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    YogaEsComponent
   ],
   imports: [
     HttpModule,
