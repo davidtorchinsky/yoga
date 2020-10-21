@@ -85,7 +85,7 @@ export class HeaderComponent implements OnInit {
 
 
     }
-    document.getElementById('navbarSupportedContent').classList.remove('show');
+    //document.getElementById('navbarSupportedContent').classList.remove('show');
   }
 
   mouseEnter() {

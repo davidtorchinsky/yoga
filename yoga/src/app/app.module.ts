@@ -27,6 +27,7 @@ import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
 import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
 import { FooterComponent } from './footer/footer.component';
 import { YogaNaturalezaComponent } from './yoga-naturaleza/yoga-naturaleza.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 
 
@@ -54,7 +55,8 @@ export function provideConfig() {
     LoginComponent,
     FooterComponent,
     ActividadesComponent,
-    YogaNaturalezaComponent
+    YogaNaturalezaComponent,
+    NosotrosComponent
   ],
   imports: [
     HttpModule,
