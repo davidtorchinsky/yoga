@@ -1,0 +1,48 @@
+img{
+    max-width: 100%;
+}
+
+.cursoIndia{
+    height: 790px;
+    background-image: url("../../assets/images/cursoIndia/cursoIndia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textoCurso{
+    color:white;
+    font-family: 'Avenir-Roman';
+    width: 50%;
+    font-size: 2.5rem;
+    padding-left: 10%;
+    padding-top: 10%;    
+    
+}
+
+
+
+
+.naranja{
+    font-family: 'Avenir-Black';
+    color:   #E99623;
+}
+
+.container{
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .cursoIndia {
+        height: 400px;
+    }
+
+    .textoCurso{
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    
+
+}
+
+

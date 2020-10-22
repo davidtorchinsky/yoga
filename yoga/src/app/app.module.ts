@@ -30,6 +30,7 @@ import { YogaNaturalezaComponent } from './yoga-naturaleza/yoga-naturaleza.compo
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { YogaEsComponent } from './yoga-es/yoga-es.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { CursoIndiaComponent } from './curso-india/curso-india.component';
 
 
 
@@ -60,7 +61,8 @@ export function provideConfig() {
     YogaNaturalezaComponent,
     NosotrosComponent,
     YogaEsComponent,
-    CarouselComponent
+    CarouselComponent,
+    CursoIndiaComponent
   ],
   imports: [
     HttpModule,

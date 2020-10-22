@@ -2,6 +2,17 @@
     text-align: center;
 }
 
+.lineaCenter{
+    text-align: center;  
+}
+
+.instructoresImg{
+    width: 50%;
+}
+.instructoresImg2{
+    width: 54%;
+}
+
 .retiros{
    
     font-family: Avenir-Black;
@@ -27,6 +38,11 @@ img{
 .aligL{
 text-align: end;
 }
+
+.subtitulo2 {
+    font-family: Avenir-Black;
+   
+    }
 
 #subtitulo {
 font-family: Avenir-Roman;
@@ -65,4 +81,25 @@ position: absolute;
 transition: width 0.3s ease-out;
 -webkit-transition: width 0.3s ease-out;
 color: #E99623 !important;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   /*  width: 50%; */
+  }
+
+.instructoreText{
+    font-family: 'Avenir-Black';
+    font-size: 2.5rem;
+    text-align: center;
+    color:#67347E;
+}
+
+.instructoreText2{
+    font-family: 'Avenir-Black';
+    font-size: 2.5rem;
+    text-align: center;
+    color:#E99623;
 }

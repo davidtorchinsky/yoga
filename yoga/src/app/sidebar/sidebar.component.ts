@@ -55,11 +55,11 @@ export class SidebarComponent implements OnInit {
 
   constructor() { }
 
-  private sidebar = false;
-  private check = false;
-  private scroll = false;
-  private number = 0;
-  private ancho;
+   sidebar = false;
+   check = false;
+   scroll = false;
+   number = 0;
+   ancho;
   mobile = false;
 
   ngOnInit(): void {

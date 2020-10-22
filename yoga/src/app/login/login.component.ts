@@ -9,8 +9,8 @@ import { FacebookLoginProvider, GoogleLoginProvider } from "angularx-social-logi
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-   private user: SocialUser;
-   private loggedIn: boolean;
+    user: SocialUser;
+    loggedIn: boolean;
 
   constructor(private authService: AuthService) { }
  
