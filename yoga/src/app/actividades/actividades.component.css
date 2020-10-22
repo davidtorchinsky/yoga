@@ -262,10 +262,22 @@ hr {
     color: #E99623 !important;
 }
 
-
+@media only screen and (min-width: 1580px) {
+    .imgEscorpion{
+        width: 100%;
+    }
+    .imgCamello{
+        width: 110%;
+    }
+}
 
 @media only screen and (max-width: 1367px) {
-    
+    .imgEscorpion{
+        width: 110%;
+    }
+    .imgCamello{
+        width: 120%;
+    }
 }
 
 
