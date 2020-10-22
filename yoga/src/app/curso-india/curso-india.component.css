@@ -30,6 +30,17 @@ img{
 .container{
     width: 100%;
 }
+@media only screen and (max-width: 1800px) {
+    .cursoIndia{
+        height: 1100px;
+    }
+}
+
+@media only screen and (max-width: 1580px) {
+    .cursoIndia{
+        height: 900px;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .cursoIndia {
@@ -45,4 +56,34 @@ img{
 
 }
 
+@media only screen and (max-width: 768px) {
+   .cursoIndia{
+    height: 400px;
+   }
+}
+
+@media only screen and (max-width: 426px) {
+    .cursoIndia{
+     height: 230px;
+    }
+    .textoCurso{
+        font-size: 1rem;
+        width: 50%;
+    }
+ 
+}
+
+
+@media only screen and (max-width: 411px) {
+  
+}
+
+   
+@media only screen and (max-width: 376px) {
+  
+}
+
+@media only screen and (max-width: 321px) {
+   
+}
 

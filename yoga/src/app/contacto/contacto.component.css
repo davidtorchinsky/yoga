@@ -500,7 +500,7 @@ body {
 .form-btn {
 
     margin-left: 7%;
-    margin-top: 25%;
+    margin-top: 70%;
 
 }
 
@@ -587,6 +587,7 @@ body {
     }
     .form-card {
         margin: 0;
+        height: 500px;
     }
     .form-fieldset {
         margin-top: -5%;
@@ -611,6 +612,7 @@ body {
 
     .form-btn {
         font-size: 15px;
+        margin-top: 50%;
     }
     .form-actions {
         position: relative;
@@ -716,6 +718,7 @@ body {
 
     .form-btn {
         font-size: 15px;
+        margin-left: 10%;
     }
     .form-actions {
         position: relative;
@@ -765,7 +768,7 @@ body {
 
     .form-btn {
         font-size: 15px;
-        margin-left: 24%;
+       margin-top: 65%;
     }
     .form-actions {
         position: relative;
