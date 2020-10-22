@@ -1,48 +1,48 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { FlexLayoutModule} from '@angular/flex-layout';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { FormsModule } from "@angular/forms";
 
-
-
-import { AppComponent } from './app.component';
-import { from } from 'rxjs';
-import { HeaderComponent } from './header/header.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { LoginComponent } from './login/login.component';
-import { HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
-import { ActividadesComponent } from './actividades/actividades.component';
-
+import { AppComponent } from "./app.component";
+import { from } from "rxjs";
+import { HeaderComponent } from "./header/header.component";
+import { SidebarComponent } from "./sidebar/sidebar.component";
+import { ContactoComponent } from "./contacto/contacto.component";
+import { LoginComponent } from "./login/login.component";
+import { HttpClientModule } from "@angular/common/http";
+import { HttpModule } from "@angular/http";
+import { ActividadesComponent } from "./actividades/actividades.component";
 
 //Rutas
-import {APP_ROUTING} from './app.routes';
-
+import { APP_ROUTING } from "./app.routes";
 
 //Servicios
-import {ContactoService } from './contacto/contacto.service'
+import { ContactoService } from "./contacto/contacto.service";
 //para el login
 import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
-import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
-import { FooterComponent } from './footer/footer.component';
-import { YogaNaturalezaComponent } from './yoga-naturaleza/yoga-naturaleza.component';
-import { NosotrosComponent } from './nosotros/nosotros.component';
-import { YogaEsComponent } from './yoga-es/yoga-es.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { CursoIndiaComponent } from './curso-india/curso-india.component';
-
-
+import {
+  GoogleLoginProvider,
+  FacebookLoginProvider,
+} from "angularx-social-login";
+import { FooterComponent } from "./footer/footer.component";
+import { YogaNaturalezaComponent } from "./yoga-naturaleza/yoga-naturaleza.component";
+import { NosotrosComponent } from "./nosotros/nosotros.component";
+import { YogaEsComponent } from "./yoga-es/yoga-es.component";
+import { CarouselComponent } from "./carousel/carousel.component";
+import { CursoIndiaComponent } from "./curso-india/curso-india.component";
 
 const config = new AuthServiceConfig([
   {
     id: GoogleLoginProvider.PROVIDER_ID,
-    provider: new GoogleLoginProvider('380939380894-mfd67bl4r70blmgur8r7odje5csm0b16.apps.googleusercontent.com')
-  }/* ,
+    provider: new GoogleLoginProvider(
+      "380939380894-mfd67bl4r70blmgur8r7odje5csm0b16.apps.googleusercontent.com"
+    ),
+  } /* ,
   {
     id: FacebookLoginProvider.PROVIDER_ID,
     provider: new FacebookLoginProvider("Facebook-App-Id")
-  } */
+  } */,
 ]);
 
 export function provideConfig() {
@@ -62,22 +62,25 @@ export function provideConfig() {
     NosotrosComponent,
     YogaEsComponent,
     CarouselComponent,
-    CursoIndiaComponent
+    CursoIndiaComponent,
   ],
   imports: [
     HttpModule,
+    FormsModule,
     HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     SocialLoginModule,
-    APP_ROUTING
+    APP_ROUTING,
   ],
   providers: [
     {
-    provide: AuthServiceConfig,
-    useFactory: provideConfig
-  }, ContactoService],
-  bootstrap: [AppComponent]
+      provide: AuthServiceConfig,
+      useFactory: provideConfig,
+    },
+    ContactoService,
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
