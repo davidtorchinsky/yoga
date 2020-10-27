@@ -13,9 +13,10 @@
 .violeta{
     color: rgb(77, 18, 104);
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     line-height: 1;
     margin: -0.5%;
+   
 }
 
 .formu {
@@ -64,6 +65,7 @@ hr {
 .contacto {
     background-color: rgb(231, 209, 244);
     margin-top: 25px;
+   
 }
 
 .mapa {
@@ -146,8 +148,7 @@ h5.consulta {
 }
 
 .form-btn:focus::after,
-.form-btn:hover::after,
-{
+.form-btn:hover::after{
     opacity: 0.3;
 }
 
