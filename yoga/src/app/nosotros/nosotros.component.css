@@ -13,6 +13,11 @@
     width: 54%;
 }
 
+.federation{
+    width: 20%;
+    margin-top: 4%;
+}
+
 .retiros{
    
     font-family: Avenir-Black;
@@ -42,6 +47,13 @@ text-align: end;
 .subtitulo2 {
     font-family: Avenir-Black;
    
+    }
+
+    .subtitulo{
+         
+            font-family: Avenir-Roman;
+            line-height: 1rem;
+            
     }
 
 #subtitulo {
@@ -96,6 +108,8 @@ color: #E99623 !important;
     text-align: center;
     color:#67347E;
 }
+
+
 
 .instructoreText2{
     font-family: 'Avenir-Black';
